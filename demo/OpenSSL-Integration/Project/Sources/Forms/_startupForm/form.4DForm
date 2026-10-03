@@ -1,0 +1,397 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"windowMinWidth": 640,
+	"windowMinHeight": 460,
+	"windowMaxWidth": 640,
+	"windowMaxHeight": 460,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "OpenSSL System Check",
+	"destination": "detailScreen",
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"headerBar": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 640,
+					"height": 68,
+					"fill": "#6495ed",
+					"stroke": "transparent",
+					"strokeWidth": 0,
+					"borderStyle": "none"
+				},
+				"headerAccentStripe": {
+					"type": "rectangle",
+					"top": 64,
+					"left": 0,
+					"width": 640,
+					"height": 4,
+					"fill": "#60a5fa",
+					"stroke": "transparent",
+					"strokeWidth": 0,
+					"borderStyle": "none"
+				},
+				"headerTitle": {
+					"type": "text",
+					"top": 24,
+					"left": 20,
+					"width": 320,
+					"height": 24,
+					"text": "✦ OpenSSL System Check",
+					"fontSize": 17,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"headerSub": {
+					"type": "text",
+					"top": 80,
+					"left": 36,
+					"width": 380,
+					"height": 16,
+					"text": "Verifying OpenSSL installation before proceeding",
+					"fontSize": 11,
+					"fontFamily": "system",
+					"fill": "transparent",
+					"fontWeight": "bold"
+				},
+				"cardEnvLabel": {
+					"type": "text",
+					"top": 104,
+					"left": 36,
+					"width": 200,
+					"height": 13,
+					"text": "ENVIRONMENT",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"labelPlatform": {
+					"type": "text",
+					"top": 126,
+					"left": 36,
+					"width": 80,
+					"height": 13,
+					"text": "Platform",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 36,
+					"top": 143,
+					"width": 256,
+					"height": 28,
+					"dataSource": "Form:C1466.platform",
+					"enterable": false,
+					"fontSize": 12,
+					"fontFamily": "Courier New",
+					"fill": "#eff6ff",
+					"stroke": "#191970",
+					"strokeWidth": 1,
+					"cornerRadius": 5,
+					"borderStyle": "solid",
+					"fontColor": "#1d4ed8",
+					"focusable": false
+				},
+				"labelArch": {
+					"type": "text",
+					"top": 183,
+					"left": 36,
+					"width": 120,
+					"height": 13,
+					"text": "Architecture",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"archValue": {
+					"type": "text",
+					"top": 200,
+					"left": 36,
+					"width": 256,
+					"height": 16,
+					"text": "x86_64",
+					"fontSize": 12,
+					"fontFamily": "Courier New",
+					"fill": "transparent"
+				},
+				"cardPathLabel": {
+					"type": "text",
+					"top": 104,
+					"left": 346,
+					"width": 200,
+					"height": 13,
+					"text": "INSTALLATION PATH",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"labelPath": {
+					"type": "text",
+					"top": 126,
+					"left": 346,
+					"width": 80,
+					"height": 13,
+					"text": "Binary path",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"Input": {
+					"type": "input",
+					"left": 346,
+					"top": 143,
+					"width": 256,
+					"height": 28,
+					"dataSource": "Form:C1466.openSSLPath",
+					"dataSourceTypeHint": "text",
+					"enterable": false,
+					"fontSize": 11,
+					"fontFamily": "Courier New",
+					"fill": "#eff6ff",
+					"stroke": "#191970",
+					"strokeWidth": 1,
+					"cornerRadius": 5,
+					"borderStyle": "solid",
+					"fontColor": "#1d4ed8",
+					"focusable": false
+				},
+				"labelFoundTitle": {
+					"type": "text",
+					"top": 183,
+					"left": 346,
+					"width": 80,
+					"height": 13,
+					"text": "Status",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"divider": {
+					"type": "rectangle",
+					"top": 254,
+					"left": 20,
+					"width": 600,
+					"height": 1,
+					"fill": "#bfdbfe",
+					"stroke": "transparent",
+					"strokeWidth": 0,
+					"borderStyle": "none"
+				},
+				"actionsLabel": {
+					"type": "text",
+					"top": 266,
+					"left": 20,
+					"width": 200,
+					"height": 13,
+					"text": "ACTIONS",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"Button": {
+					"type": "button",
+					"text": "▶  Custom Path",
+					"top": 288,
+					"left": 20,
+					"width": 180,
+					"height": 40,
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fill": "#ffffff",
+					"stroke": "#0000cd",
+					"fontColor": "#1d4ed8",
+					"cornerRadius": 8,
+					"borderStyle": "solid",
+					"strokeWidth": 1,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "bcustomOpenSSL",
+					"method": "ObjectMethods/Button.4dm"
+				},
+				"Button2": {
+					"type": "button",
+					"text": "▶  Install OpenSSL",
+					"top": 288,
+					"left": 218,
+					"width": 180,
+					"height": 40,
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fill": "#dbeafe",
+					"stroke": "#0000cd",
+					"fontColor": "#1e40af",
+					"cornerRadius": 8,
+					"borderStyle": "solid",
+					"strokeWidth": 1,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "binstallOpenSSL",
+					"method": "ObjectMethods/Button2.4dm"
+				},
+				"installHintWin": {
+					"type": "text",
+					"top": 334,
+					"left": 218,
+					"width": 180,
+					"height": 13,
+					"text": "winget install openssl",
+					"fontSize": 12,
+					"fontFamily": "Courier New",
+					"fill": "#c0c0c0"
+				},
+				"installHintMac": {
+					"type": "text",
+					"top": 349,
+					"left": 218,
+					"width": 180,
+					"height": 13,
+					"text": "brew install openssl@3",
+					"fontSize": 12,
+					"fontFamily": "Courier New",
+					"fill": "#c0c0c0"
+				},
+				"Button1": {
+					"type": "button",
+					"text": "▶  Proceed to App",
+					"top": 288,
+					"left": 420,
+					"width": 200,
+					"height": 40,
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"fill": "#1a56db",
+					"stroke": "#0000cd",
+					"fontColor": "#ffffff",
+					"cornerRadius": 8,
+					"borderStyle": "none",
+					"strokeWidth": 0,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "bgoToApp",
+					"method": "ObjectMethods/Button1.4dm"
+				},
+				"proceedNote": {
+					"type": "text",
+					"top": 336,
+					"left": 420,
+					"width": 200,
+					"height": 13,
+					"text": "OpenSSL must be found first",
+					"fontSize": 12,
+					"fontFamily": "system",
+					"fill": "#c0c0c0"
+				},
+				"footerBar": {
+					"type": "rectangle",
+					"top": 428,
+					"left": 0,
+					"width": 640,
+					"height": 32,
+					"fill": "#dbeafe",
+					"stroke": "#bfdbfe",
+					"strokeWidth": 1,
+					"borderStyle": "solid"
+				},
+				"footerText": {
+					"type": "text",
+					"top": 436,
+					"left": 20,
+					"width": 400,
+					"height": 14,
+					"text": "TN-OpenSSL  •  Certificate Manager  •  System Validation",
+					"fontSize": 10,
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"footerDot": {
+					"type": "oval",
+					"top": 440,
+					"left": 610,
+					"width": 10,
+					"height": 10,
+					"fill": "#1a56db",
+					"stroke": "transparent",
+					"strokeWidth": 0
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"text": "OpenSSL Found",
+					"top": 200,
+					"left": 346,
+					"width": 163,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.isOpenSSL",
+					"dataSourceTypeHint": "boolean",
+					"enterable": false,
+					"focusable": false
+				},
+				"Button3": {
+					"type": "button",
+					"text": "⟳ Reload Info",
+					"top": 74,
+					"left": 500,
+					"width": 140,
+					"height": 29,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button3.4dm",
+					"borderStyle": "none"
+				}
+			}
+		}
+	],
+	"geometryStamp": 83,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"menuBar": "Barre #1"
+}

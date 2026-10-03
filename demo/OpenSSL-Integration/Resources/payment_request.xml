@@ -1,0 +1,10 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Body>
+<Payment>
+<TransactionID>TX-20260203-001</TransactionID>
+<Amount>2500.00</Amount>
+<Currency>EUR</Currency>
+<BeneficiaryAccount>DE89370400440532013000</BeneficiaryAccount>
+</Payment>
+</soap:Body>
+</soap:Envelope>
