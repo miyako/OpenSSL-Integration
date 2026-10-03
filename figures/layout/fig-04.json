@@ -1,0 +1,180 @@
+{
+ "source": "fig-04.png",
+ "page": 13,
+ "width_pt": 676.2,
+ "localize": false,
+ "items": [
+  {
+   "box": [
+    10,
+    11,
+    107,
+    12
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    8,
+    36,
+    17,
+    9
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    40,
+    36,
+    64,
+    9
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    119,
+    36,
+    24,
+    12
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    612,
+    264,
+    25,
+    6
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    792,
+    347,
+    28,
+    28
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    661,
+    362,
+    16,
+    4
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    707,
+    362,
+    11,
+    4
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    766,
+    362,
+    13,
+    4
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    850,
+    362,
+    10,
+    4
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    1206,
+    364,
+    3,
+    4
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    679,
+    459,
+    3,
+    4
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    699,
+    459,
+    3,
+    4
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    794,
+    459,
+    16,
+    4
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    931,
+    459,
+    13,
+    4
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    646,
+    696,
+    26,
+    8
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    725,
+    696,
+    31,
+    7
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    769,
+    698,
+    5,
+    28
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    778,
+    709,
+    91,
+    9
+   ],
+   "align": "center"
+  }
+ ],
+ "$note": "App screenshot (full-screen 4D window on Windows). Not localised: replace with a Japanese screenshot via \"replace\"."
+}

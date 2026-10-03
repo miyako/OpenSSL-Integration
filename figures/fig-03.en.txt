@@ -1,0 +1,19 @@
+© TN-OpenSSL-4D
+File
+Edit Mode
+Help
+Private Key Configuration
+KeySze Algorithm Filename
+RSA
+2
+2
+1048
+Generated Key
+“BEGIN PRIVATE KEV.
+MITEVATBADANBgkghiki
+6f sEvc9F 46i nxWBAUDRK
+\yob0eXimDgGT7 én7Tva
+680£3ThbiRej
+xeQ3Euk0cSGyxj/BuA76qiDSDASts1 IpV3QHAVKYGi
+6vé
+Generated Key

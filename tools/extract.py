@@ -68,6 +68,12 @@ def is_code_font(span):
     return any(f in font_of(span) for f in CODE_FONTS)
 
 
+def is_code_font_line(item):
+    """Every visible span is in a code font (code set in a monospace font at body indent)."""
+    spans = [sp for sp in item["spans"] if sp["text"].strip()]
+    return bool(CODE_FONTS) and bool(spans) and all(is_code_font(sp) for sp in spans)
+
+
 def is_code_line(item, body_x):
     if any((s["color"] in CODE_COLORS or is_code_font(s)) and s["text"].strip() for s in item["spans"]):
         return True
@@ -192,7 +198,8 @@ def extract_body(doc):
             size = round(max(s["size"] for s in it["spans"]))
 
             if not text.strip():
-                if state["code"] and it["x"] >= body_x + CFG["code"]["indent"]:
+                if state["code"] and (it["x"] >= body_x + CFG["code"]["indent"]
+                                      or (it["spans"] and all(is_code_font(sp) for sp in it["spans"]))):
                     state["code"].append(it)
                 else:
                     flush_code()
@@ -244,7 +251,7 @@ def extract_body(doc):
                 prev = it
                 continue
 
-            if it["x"] != body_x and is_code_line(it, body_x):
+            if (it["x"] != body_x or is_code_font_line(it)) and is_code_line(it, body_x):
                 flush_para(); flush_bullets()
                 state["code"].append(it)
                 prev = it
