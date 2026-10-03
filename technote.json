@@ -1,5 +1,52 @@
 {
-  "$comment": "Document-specific settings. Run `make inspect` and review; see tools/config.py for all keys and defaults.",
   "source_lang": "en",
-  "target_lang": "ja"
+  "target_lang": "ja",
+  "page_size": "letter",
+  "accent_color": "#2f5496",
+  "cover": {
+    "page": 1,
+    "lines": 3
+  },
+  "skip_pages": [
+    1,
+    2
+  ],
+  "footer_y": 714,
+  "heading": {
+    "fonts": [
+      "HelveticaNeue-Medium"
+    ],
+    "min_size": 12.0,
+    "levels_by_x": {
+      "72": 2,
+      "90": 3
+    }
+  },
+  "code": {
+    "colors": [],
+    "fonts": [
+      "SegoeUIHistoric",
+      "Consolas"
+    ],
+    "indent": 5
+  },
+  "bullets": {
+    "fonts": [
+      "SymbolMT"
+    ]
+  },
+  "caption": {
+    "italic": true,
+    "min_x": 612
+  },
+  "table": {
+    "size": null
+  },
+  "$comment": "Document-specific settings. Run `make inspect` and review; see tools/config.py for all keys and defaults.",
+  "$notes": [
+    "code: set in 9pt SegoeUIHistoric (black), not coloured; Consolas-Bold is one inline identifier (p8).",
+    "caption: the PDF has no figure captions; the only italic text is a 'Note:' box (p6), so caption detection is disabled with min_x beyond the page.",
+    "table: the one table (p10) uses body-size text, so table.size is null and it is fixed by hand in src/en.md.",
+    "Vector drawings on p8/p10 are code-block shading and the table border, not diagrams."
+  ]
 }
