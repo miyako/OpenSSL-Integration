@@ -51,7 +51,7 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 | (OpenSSL command-line) parameter | パラメーター | Not 引数, which is for 4D method/function parameters |
 | flag / option | フラグ / オプション | Follows the English wording of each sentence |
 | subcommand | サブコマンド | |
-| cryptographic asset(s) | 暗号資産 | |
+| cryptographic asset(s) | 暗号関連リソース | Not 暗号資産, which means cryptocurrency in Japanese |
 | cryptographic operation | 暗号処理 | |
 | private key / public key | 秘密鍵 / 公開鍵 | |
 | key pair | 鍵ペア | |
