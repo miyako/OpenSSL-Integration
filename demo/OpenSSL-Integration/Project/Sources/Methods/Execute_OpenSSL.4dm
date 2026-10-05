@@ -29,13 +29,13 @@ If ($binPath#Null:C1517)
 		$elapsed:=(Milliseconds:C459-$startTime)/1000
 		
 		If ($worker.responseError#"")
-			ALERT:C41("OpenSSL Error: "+$worker.responseError)
+			ALERT:C41(Replace string(Localized string("Msg_OpenSSLError"); "{error}"; $worker.responseError))
 			$worker.terminate()
 			return $worker
 		End if 
 		
 		If ($elapsed>$timeoutSeconds) & (Not:C34($worker.terminated))
-			ALERT:C41("OpenSSL command timed out after "+String:C10($timeoutSeconds)+" seconds\n\nCommand: "+$command)
+			ALERT:C41(Replace string(Replace string(Localized string("Msg_TimedOut"); "{seconds}"; String:C10($timeoutSeconds)); "{command}"; $command))
 			$worker.terminate()
 			return $worker
 		End if 
@@ -44,7 +44,7 @@ If ($binPath#Null:C1517)
 	
 Else 
 	
-	ALERT:C41("OpenSSL not found at: "+$binPath+"\n\nPlease install:\nWindows: winget install openssl\nmacOS: brew install openssl@3")
+	ALERT:C41(Replace string(Localized string("Msg_OpenSSLNotFound"); "{path}"; $binPath))
 	return 
 End if 
 
@@ -52,7 +52,7 @@ End if
 
 // Final error check
 If ($worker.responseError#"")
-	ALERT:C41("OpenSSL Error: "+$worker.responseError)
+	ALERT:C41(Replace string(Localized string("Msg_OpenSSLError"); "{error}"; $worker.responseError))
 End if 
 
 return $worker

@@ -9,7 +9,7 @@ Case of
 		$webServer.stop()
 		
 		If (Not:C34($webServer.isRunning))
-			ALERT:C41("Web Server Stopped")
+			ALERT:C41(Localized string("Msg_WebServerStopped"))
 			OBJECT SET VISIBLE:C603(*; "tserverDown"; True:C214)
 			
 			OBJECT SET VISIBLE:C603(*; "tserverUp"; False:C215)

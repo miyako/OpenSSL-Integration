@@ -33,8 +33,8 @@ $sigFile:=File:C1566($pathXMLOUT)
 
 
 If ($sigFile#Null:C1517) && ($worker.terminated)
-	ALERT:C41("Success! Signed file created in Resources:\n"+$sigFile.name)
+	ALERT:C41(Replace string(Localized string("Msg_SignedFileCreated"); "{name}"; $sigFile.name))
 	Form:C1466.signedXML:=$sigFile.getText()
 Else 
-	ALERT:C41("Error: OpenSSL could not find the file at: "+$pathXMLIN)
+	ALERT:C41(Replace string(Localized string("Msg_FileNotFoundOpenSSL"); "{path}"; $pathXMLIN))
 End if 

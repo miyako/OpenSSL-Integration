@@ -13,7 +13,7 @@ Case of
 			
 		Else 
 			
-			ALERT:C41("Did you generate a CRT certificate?")
+			ALERT:C41(Localized string("Msg_DidYouGenerateCRT"))
 			
 		End if 
 End case 

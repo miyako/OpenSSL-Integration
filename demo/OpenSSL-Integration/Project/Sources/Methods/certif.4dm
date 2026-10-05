@@ -49,7 +49,7 @@ End if
 $worker:=Execute_OpenSSL($cmd)
 
 If (File:C1566($certPath).exists & $worker.terminated)
-	ALERT:C41("Success! Self-signed certificate created: "+$certName)
+	ALERT:C41(Replace string(Localized string("Msg_SelfSignedCreated"); "{name}"; $certName))
 	Form:C1466.certificate:=File:C1566($certPath).getText()
 	Form:C1466.certPath:=$certPath
 	OBJECT SET ENABLED:C1123(bopenCrtFile; True:C214)
@@ -57,6 +57,6 @@ If (File:C1566($certPath).exists & $worker.terminated)
 	OBJECT SET ENABLED:C1123(bcopyCert; True:C214)
 	
 Else 
-	ALERT:C41("Could not create file")
+	ALERT:C41(Localized string("Msg_CouldNotCreateFile"))
 	
 End if 

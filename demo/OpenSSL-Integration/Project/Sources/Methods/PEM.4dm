@@ -25,19 +25,16 @@ If (File:C1566($csrPath).exists) & (File:C1566($keyPath).exists)
 	$worker:=Execute_OpenSSL($cmd)
 	
 	If (File:C1566($certPath).exists & $worker.terminated)
-		ALERT:C41("Success! Certificate created.")
+		ALERT:C41(Localized string("Msg_CertCreated"))
 		Form:C1466.pem:=File:C1566($certPath).getText()
 		Form:C1466.pemPath:=$certPath
 		OBJECT SET ENABLED:C1123(bopenPemFile; True:C214)
 		
 		
 	Else 
-		ALERT:C41("Error: Certificate not generated")
+		ALERT:C41(Localized string("Msg_CertNotGenerated"))
 	End if 
 	
 Else 
-	ALERT:C41("Missing required files!"+Char:C90(Carriage return:K15:38)+Char:C90(Carriage return:K15:38)+\
-		"You need:"+Char:C90(Carriage return:K15:38)+\
-		"1. Private key: private_key.key"+Char:C90(Carriage return:K15:38)+\
-		"2. CSR: certificate.csr")
+	ALERT:C41(Localized string("Msg_MissingFiles"))
 End if 

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="mainEN.xlf" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="Main_WindowTitle" resname="Main_WindowTitle">
+				<source>Certificate Manager</source>
+				<target>Certificate Manager</target>
+			</trans-unit>
+			<trans-unit id="Main_Title" resname="Main_Title">
+				<source> OpenSSL : Certificate Manager</source>
+				<target> OpenSSL : Certificate Manager</target>
+			</trans-unit>
+			<trans-unit id="Main_OpenSSLInstalled" resname="Main_OpenSSLInstalled">
+				<source>OpenSSL Installed</source>
+				<target>OpenSSL Installed</target>
+			</trans-unit>
+			<trans-unit id="Main_PrivateKeyConfig" resname="Main_PrivateKeyConfig">
+				<source>Private Key Configuration</source>
+				<target>Private Key Configuration</target>
+			</trans-unit>
+			<trans-unit id="Main_PrivateKeyInfo" resname="Main_PrivateKeyInfo">
+				<source>Generate an RSA private key for certificate signing</source>
+				<target>Generate an RSA private key for certificate signing</target>
+			</trans-unit>
+			<trans-unit id="Main_GeneratePrivateKey" resname="Main_GeneratePrivateKey">
+				<source>Generate Private Key</source>
+				<target>Generate Private Key</target>
+			</trans-unit>
+			<trans-unit id="Main_GeneratedKey" resname="Main_GeneratedKey">
+				<source>Generated Key </source>
+				<target>Generated Key </target>
+			</trans-unit>
+			<trans-unit id="Main_InfoKeySaved" resname="Main_InfoKeySaved">
+				<source>INFO: The private key will be saved in the Resources folder</source>
+				<target>INFO: The private key will be saved in the Resources folder</target>
+			</trans-unit>
+			<trans-unit id="Main_RevealInFinder" resname="Main_RevealInFinder">
+				<source>Reveal in Finder</source>
+				<target>Reveal in Finder</target>
+			</trans-unit>
+			<trans-unit id="Main_GeneratedKeyPath" resname="Main_GeneratedKeyPath">
+				<source>Generated Key Path</source>
+				<target>Generated Key Path</target>
+			</trans-unit>
+			<trans-unit id="Main_Step1Title" resname="Main_Step1Title">
+				<source>Generate Private Key</source>
+				<target>Generate Private Key</target>
+			</trans-unit>
+			<trans-unit id="Main_KeySize" resname="Main_KeySize">
+				<source>Key Size</source>
+				<target>Key Size</target>
+			</trans-unit>
+			<trans-unit id="Main_Algorithm" resname="Main_Algorithm">
+				<source>Algorithm</source>
+				<target>Algorithm</target>
+			</trans-unit>
+			<trans-unit id="Main_FileName" resname="Main_FileName">
+				<source>File name&#13;</source>
+				<target>File name&#13;</target>
+			</trans-unit>
+			<trans-unit id="Main_WithoutExtension" resname="Main_WithoutExtension">
+				<source>Without extension&#13;</source>
+				<target>Without extension&#13;</target>
+			</trans-unit>
+			<trans-unit id="Main_CSRTitle" resname="Main_CSRTitle">
+				<source>Certificate Signing Request (CSR)</source>
+				<target>Certificate Signing Request (CSR)</target>
+			</trans-unit>
+			<trans-unit id="Main_CSRInfo" resname="Main_CSRInfo">
+				<source>Generate a CSR from your private key to request a certificate from a CA</source>
+				<target>Generate a CSR from your private key to request a certificate from a CA</target>
+			</trans-unit>
+			<trans-unit id="Main_GenerateCSR" resname="Main_GenerateCSR">
+				<source>Generate CSR</source>
+				<target>Generate CSR</target>
+			</trans-unit>
+			<trans-unit id="Main_GeneratedCSR" resname="Main_GeneratedCSR">
+				<source>Generated CSR</source>
+				<target>Generated CSR</target>
+			</trans-unit>
+			<trans-unit id="Main_Info" resname="Main_Info">
+				<source>INFO:</source>
+				<target>INFO:</target>
+			</trans-unit>
+			<trans-unit id="Main_CSRSubmit" resname="Main_CSRSubmit">
+				<source>- Submit this CSR to a Certificate Authority to obtain a signed certificate</source>
+				<target>- Submit this CSR to a Certificate Authority to obtain a signed certificate</target>
+			</trans-unit>
+			<trans-unit id="Main_KeySavedAsItem" resname="Main_KeySavedAsItem">
+				<source>- The private key will be saved in the Resources folder as private_key.key</source>
+				<target>- The private key will be saved in the Resources folder as private_key.key</target>
+			</trans-unit>
+			<trans-unit id="Main_Step2Title" resname="Main_Step2Title">
+				<source>Generate CSR</source>
+				<target>Generate CSR</target>
+			</trans-unit>
+			<trans-unit id="Main_DNSection" resname="Main_DNSection">
+				<source>Distinguished Name — from openssl.cnf (read-only)</source>
+				<target>Distinguished Name — from openssl.cnf (read-only)</target>
+			</trans-unit>
+			<trans-unit id="Main_Serial" resname="Main_Serial">
+				<source>Serial</source>
+				<target>Serial</target>
+			</trans-unit>
+			<trans-unit id="Main_SelfSignedCert" resname="Main_SelfSignedCert">
+				<source>Self-Signed Certificate</source>
+				<target>Self-Signed Certificate</target>
+			</trans-unit>
+			<trans-unit id="Main_CertInfo" resname="Main_CertInfo">
+				<source>Create a self-signed certificate for testing or internal use</source>
+				<target>Create a self-signed certificate for testing or internal use</target>
+			</trans-unit>
+			<trans-unit id="Main_GenerateCert" resname="Main_GenerateCert">
+				<source>Generate Certificate</source>
+				<target>Generate Certificate</target>
+			</trans-unit>
+			<trans-unit id="Main_SelfSignedCertOutput" resname="Main_SelfSignedCertOutput">
+				<source>Self-signed Certificate</source>
+				<target>Self-signed Certificate</target>
+			</trans-unit>
+			<trans-unit id="Main_SelfSignedWarning" resname="Main_SelfSignedWarning">
+				<source>WARNING: Self-signed certificates are for development and testing only. Not trusted by browsers.</source>
+				<target>WARNING: Self-signed certificates are for development and testing only. Not trusted by browsers.</target>
+			</trans-unit>
+			<trans-unit id="Main_InfoKeySavedAs" resname="Main_InfoKeySavedAs">
+				<source>INFO: The private key will be saved in the Resources folder as private_key.key</source>
+				<target>INFO: The private key will be saved in the Resources folder as private_key.key</target>
+			</trans-unit>
+			<trans-unit id="Main_Step3Title" resname="Main_Step3Title">
+				<source> Generate Certificate</source>
+				<target> Generate Certificate</target>
+			</trans-unit>
+			<trans-unit id="Main_OutputFormat" resname="Main_OutputFormat">
+				<source>Output Format</source>
+				<target>Output Format</target>
+			</trans-unit>
+			<trans-unit id="Main_ValidDays" resname="Main_ValidDays">
+				<source>Valid (days)</source>
+				<target>Valid (days)</target>
+			</trans-unit>
+			<trans-unit id="Main_GetCertInfo" resname="Main_GetCertInfo">
+				<source>Get Certificate Info</source>
+				<target>Get Certificate Info</target>
+			</trans-unit>
+			<trans-unit id="Main_ForWebServerPEM" resname="Main_ForWebServerPEM">
+				<source>For 4D Web Server, choose PEM</source>
+				<target>For 4D Web Server, choose PEM</target>
+			</trans-unit>
+			<trans-unit id="Main_ForPKCS7CRT" resname="Main_ForPKCS7CRT">
+				<source>For PKCS7, choose CRT</source>
+				<target>For PKCS7, choose CRT</target>
+			</trans-unit>
+			<trans-unit id="Main_StartWebServer" resname="Main_StartWebServer">
+				<source>Start Web Server</source>
+				<target>Start Web Server</target>
+			</trans-unit>
+			<trans-unit id="Main_PlaceCertFiles" resname="Main_PlaceCertFiles">
+				<source>Place cert.pem and key.pem in the project folder's root</source>
+				<target>Place cert.pem and key.pem in the project folder's root</target>
+			</trans-unit>
+			<trans-unit id="Main_CopyCertificate" resname="Main_CopyCertificate">
+				<source>Copy Certificate</source>
+				<target>Copy Certificate</target>
+			</trans-unit>
+			<trans-unit id="Main_CopyCertificates" resname="Main_CopyCertificates">
+				<source>Copy Certificates</source>
+				<target>Copy Certificates</target>
+			</trans-unit>
+			<trans-unit id="Main_RestartWebServer" resname="Main_RestartWebServer">
+				<source>Restart Web Server</source>
+				<target>Restart Web Server</target>
+			</trans-unit>
+			<trans-unit id="Main_RestartHTTPSInfo" resname="Main_RestartHTTPSInfo">
+				<source>Restart HTTPS 4D Web Server with self-signed certificate</source>
+				<target>Restart HTTPS 4D Web Server with self-signed certificate</target>
+			</trans-unit>
+			<trans-unit id="Main_StopWebServer" resname="Main_StopWebServer">
+				<source>Stop Web Server</source>
+				<target>Stop Web Server</target>
+			</trans-unit>
+			<trans-unit id="Main_ServerDown" resname="Main_ServerDown">
+				<source>4D WEB Server Down</source>
+				<target>4D WEB Server Down</target>
+			</trans-unit>
+			<trans-unit id="Main_ServerActive" resname="Main_ServerActive">
+				<source>4D WEB Server Active</source>
+				<target>4D WEB Server Active</target>
+			</trans-unit>
+			<trans-unit id="Main_Step4Title" resname="Main_Step4Title">
+				<source>Verify &amp; Review Certificate</source>
+				<target>Verify &amp; Review Certificate</target>
+			</trans-unit>
+			<trans-unit id="Main_VerifyCertificate" resname="Main_VerifyCertificate">
+				<source>Verify Certificate</source>
+				<target>Verify Certificate</target>
+			</trans-unit>
+			<trans-unit id="Main_BonusSignXML" resname="Main_BonusSignXML">
+				<source>Bonus - Sign XML</source>
+				<target>Bonus - Sign XML</target>
+			</trans-unit>
+			<trans-unit id="Main_XMLFile" resname="Main_XMLFile">
+				<source>XML File</source>
+				<target>XML File</target>
+			</trans-unit>
+			<trans-unit id="Main_Certificate" resname="Main_Certificate">
+				<source>Certificate</source>
+				<target>Certificate</target>
+			</trans-unit>
+			<trans-unit id="Main_OutputFile" resname="Main_OutputFile">
+				<source>Output File</source>
+				<target>Output File</target>
+			</trans-unit>
+			<trans-unit id="Main_Result" resname="Main_Result">
+				<source>Result</source>
+				<target>Result</target>
+			</trans-unit>
+			<trans-unit id="Main_SignXML" resname="Main_SignXML">
+				<source>✍️  Sign XML with PKCS7</source>
+				<target>✍️  Sign XML with PKCS7</target>
+			</trans-unit>
+			<trans-unit id="Main_PrivateKey" resname="Main_PrivateKey">
+				<source>Private Key</source>
+				<target>Private Key</target>
+			</trans-unit>
+			<trans-unit id="Main_GenerateFirst" resname="Main_GenerateFirst">
+				<source>Generate private key and PEM first in steps 1-3</source>
+				<target>Generate private key and PEM first in steps 1-3</target>
+			</trans-unit>
+			<trans-unit id="Main_OpenSSLTask" resname="Main_OpenSSLTask">
+				<source>OpenSSL Task</source>
+				<target>OpenSSL Task</target>
+			</trans-unit>
+			<trans-unit id="Main_TaskInfo" resname="Main_TaskInfo">
+				<source>Generates an 8192-bit RSA private key</source>
+				<target>Generates an 8192-bit RSA private key</target>
+			</trans-unit>
+			<trans-unit id="Main_StartLongTask" resname="Main_StartLongTask">
+				<source>&gt; Start Long Task</source>
+				<target>&gt; Start Long Task</target>
+			</trans-unit>
+			<trans-unit id="Main_StillResponsive" resname="Main_StillResponsive">
+				<source>  UI Still Responsive?  Try it!</source>
+				<target>  UI Still Responsive?  Try it!</target>
+			</trans-unit>
+			<trans-unit id="Main_ControlsWork" resname="Main_ControlsWork">
+				<source>These controls all work while OpenSSL runs</source>
+				<target>These controls all work while OpenSSL runs</target>
+			</trans-unit>
+			<trans-unit id="Main_ClickCounter" resname="Main_ClickCounter">
+				<source>Click Counter</source>
+				<target>Click Counter</target>
+			</trans-unit>
+			<trans-unit id="Main_ClickMe" resname="Main_ClickMe">
+				<source>+ Click Me</source>
+				<target>+ Click Me</target>
+			</trans-unit>
+			<trans-unit id="Main_TypeSomething" resname="Main_TypeSomething">
+				<source>Type Something</source>
+				<target>Type Something</target>
+			</trans-unit>
+			<trans-unit id="Main_TypePlaceholder" resname="Main_TypePlaceholder">
+				<source>Type while OpenSSL works...</source>
+				<target>Type while OpenSSL works...</target>
+			</trans-unit>
+			<trans-unit id="Main_ToggleOptions" resname="Main_ToggleOptions">
+				<source>Toggle Options</source>
+				<target>Toggle Options</target>
+			</trans-unit>
+			<trans-unit id="Main_OptionA" resname="Main_OptionA">
+				<source>Option A</source>
+				<target>Option A</target>
+			</trans-unit>
+			<trans-unit id="Main_OptionB" resname="Main_OptionB">
+				<source>Option B</source>
+				<target>Option B</target>
+			</trans-unit>
+			<trans-unit id="Main_OptionC" resname="Main_OptionC">
+				<source>Option C</source>
+				<target>Option C</target>
+			</trans-unit>
+			<trans-unit id="Main_AsyncDemo" resname="Main_AsyncDemo">
+				<source>Asynchronous Execution Demo</source>
+				<target>Asynchronous Execution Demo</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

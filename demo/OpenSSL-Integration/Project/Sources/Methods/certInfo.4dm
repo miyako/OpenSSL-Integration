@@ -36,5 +36,5 @@ If ($worker.terminated)
 	ALERT:C41($worker.response)
 	
 Else 
-	ALERT:C41("Could not get info")
+	ALERT:C41(Localized string("Msg_CouldNotGetInfo"))
 End if 

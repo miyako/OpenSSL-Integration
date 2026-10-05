@@ -14,7 +14,7 @@ Case of
 			web
 			
 		Else 
-			ALERT:C41("Missing certificate and/or private key. Did you copy the files in step 1?")
+			ALERT:C41(Localized string("Msg_MissingCertOrKey"))
 			
 		End if 
 End case 

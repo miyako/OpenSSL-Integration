@@ -7,10 +7,10 @@ var $command; $doc : Text
 
 If (Storage:C1525.config.os="Windows")
 	$filter:=".exe"
-	$title:="Locate openssl.exe"
+	$title:=Localized string("Msg_LocateOpenSSLExe")
 Else 
 	$filter:="*"
-	$title:="Locate openssl executable"
+	$title:=Localized string("Msg_LocateOpenSSLExecutable")
 End if 
 
 $doc:=Select document:C905(System folder:C487(Home folder:K41:19); $filter; $title; Use sheet window:K24:11)
@@ -35,12 +35,12 @@ If (OK=1)
 			
 			OBJECT SET ENABLED:C1123(bgoToApp; Form:C1466.isOpenSSL)
 			
-			ALERT:C41("Custom OpenSSL configured successfully!")
+			ALERT:C41(Localized string("Msg_CustomConfigured"))
 			
 		Else 
-			ALERT:C41("Invalid OpenSSL executable")
+			ALERT:C41(Localized string("Msg_InvalidExecutable"))
 		End if 
 	Else 
-		ALERT:C41("File not found at: "+$selectedFile.platformPath)
+		ALERT:C41(Replace string(Localized string("Msg_FileNotFoundAt"); "{path}"; $selectedFile.platformPath))
 	End if 
 End if 

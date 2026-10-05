@@ -26,11 +26,11 @@ $worker:=Execute_OpenSSL($cmd)
 
 
 If (File:C1566($keyPath).exists & $worker.terminated)
-	ALERT:C41("Success! Private key created.")
+	ALERT:C41(Localized string("Msg_KeyCreated"))
 	Form:C1466.privateKey:=File:C1566($keyPath).getText()
 	Form:C1466.keyPath:=$keyPath
 	OBJECT SET ENABLED:C1123(bopenKeyFile; True:C214)
 Else 
-	ALERT:C41("Could not create file")
+	ALERT:C41(Localized string("Msg_CouldNotCreateFile"))
 	
 End if 

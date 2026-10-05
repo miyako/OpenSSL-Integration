@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="installJA.xlf" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="InstallMac_Title" resname="InstallMac_Title">
+				<source>Install OpenSSL — macOS</source>
+				<target>OpenSSLのインストール — macOS</target>
+			</trans-unit>
+			<trans-unit id="InstallMac_Subtitle" resname="InstallMac_Subtitle">
+				<source>Follow the steps below to install OpenSSL via Homebrew</source>
+				<target>次の手順に従って、HomebrewでOpenSSLをインストールします</target>
+			</trans-unit>
+			<trans-unit id="InstallMac_Step1" resname="InstallMac_Step1">
+				<source>Install Homebrew (if not already installed)</source>
+				<target>Homebrewをインストール（未インストールの場合）</target>
+			</trans-unit>
+			<trans-unit id="Install_Copy" resname="Install_Copy">
+				<source>⎘ Copy</source>
+				<target>⎘ コピー</target>
+			</trans-unit>
+			<trans-unit id="InstallMac_Step2" resname="InstallMac_Step2">
+				<source>Install OpenSSL via Homebrew</source>
+				<target>HomebrewでOpenSSLをインストール</target>
+			</trans-unit>
+			<trans-unit id="InstallMac_Step3" resname="InstallMac_Step3">
+				<source>Verify OpenSSL version</source>
+				<target>OpenSSLのバージョンを確認</target>
+			</trans-unit>
+			<trans-unit id="InstallMac_MoreOptions" resname="InstallMac_MoreOptions">
+				<source>For more installation options, check the documentation</source>
+				<target>その他のインストール方法については、ドキュメントを参照してください</target>
+			</trans-unit>
+			<trans-unit id="Install_CheckInstallation" resname="Install_CheckInstallation">
+				<source>▶  Check OpenSSL Installation</source>
+				<target>▶  OpenSSLのインストールを確認</target>
+			</trans-unit>
+			<trans-unit id="InstallWin_Title" resname="InstallWin_Title">
+				<source>Install OpenSSL — Windows</source>
+				<target>OpenSSLのインストール — Windows</target>
+			</trans-unit>
+			<trans-unit id="InstallWin_Subtitle" resname="InstallWin_Subtitle">
+				<source>Follow the steps below to install OpenSSL via Winget</source>
+				<target>次の手順に従って、WingetでOpenSSLをインストールします</target>
+			</trans-unit>
+			<trans-unit id="InstallWin_Step1" resname="InstallWin_Step1">
+				<source>Upgrade Winget</source>
+				<target>Wingetをアップグレード</target>
+			</trans-unit>
+			<trans-unit id="InstallWin_Step2" resname="InstallWin_Step2">
+				<source>Install OpenSSL</source>
+				<target>OpenSSLをインストール</target>
+			</trans-unit>
+			<trans-unit id="InstallWin_Step3" resname="InstallWin_Step3">
+				<source>Search for OpenSSL packages (optional)</source>
+				<target>OpenSSLパッケージを検索（任意）</target>
+			</trans-unit>
+			<trans-unit id="InstallWin_MoreOptions" resname="InstallWin_MoreOptions">
+				<source>For more installation options, check the documentation — Section 2</source>
+				<target>その他のインストール方法については、ドキュメントのセクション2を参照してください</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

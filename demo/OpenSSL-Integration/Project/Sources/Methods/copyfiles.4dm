@@ -26,18 +26,11 @@ If ($certSource.exists) & ($keySource.exists)
 	
 	If ($certDest.exists) & ($keyDest.exists)
 		$success:=True:C214
-		ALERT:C41(" SSL files copied to database folder!"+Char:C90(Carriage return:K15:38)+\
-			Char:C90(Carriage return:K15:38)+\
-			"Files copied:"+Char:C90(Carriage return:K15:38)+\
-			"- cert.pem"+Char:C90(Carriage return:K15:38)+\
-			"- private_key.key"+Char:C90(Carriage return:K15:38)+\
-			Char:C90(Carriage return:K15:38)+\
-			"Location:"+Char:C90(Carriage return:K15:38)+\
-			$dbFolder.platformPath)
+		ALERT:C41(Replace string(Localized string("Msg_SSLFilesCopied"); "{path}"; $dbFolder.platformPath))
 	End if 
 	
 Else 
-	ALERT:C41("Please generate a private key and/or PEM certificate")
+	ALERT:C41(Localized string("Msg_GenerateKeyOrPEM"))
 End if 
 
 

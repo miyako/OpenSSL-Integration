@@ -16,5 +16,5 @@ If ($worker#Null:C1517) & ($worker.exitCode=0)
 	End if 
 	
 Else 
-	Form:C1466.version:="OpenSSL not found or error occurred"
+	Form:C1466.version:=Localized string("Msg_VersionNotFound")
 End if 

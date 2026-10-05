@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="messagesJA.xlf" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="Msg_CopiedToPasteboard" resname="Msg_CopiedToPasteboard">
+				<source>Copied to pasteboard</source>
+				<target>クリップボードにコピーしました</target>
+			</trans-unit>
+			<trans-unit id="Msg_VersionNotFound" resname="Msg_VersionNotFound">
+				<source>OpenSSL not found or error occurred</source>
+				<target>OpenSSLが見つからないか、エラーが発生しました</target>
+			</trans-unit>
+			<trans-unit id="Msg_LocateOpenSSLExe" resname="Msg_LocateOpenSSLExe">
+				<source>Locate openssl.exe</source>
+				<target>openssl.exeを選択</target>
+			</trans-unit>
+			<trans-unit id="Msg_LocateOpenSSLExecutable" resname="Msg_LocateOpenSSLExecutable">
+				<source>Locate openssl executable</source>
+				<target>openssl実行ファイルを選択</target>
+			</trans-unit>
+			<trans-unit id="Msg_CustomConfigured" resname="Msg_CustomConfigured">
+				<source>Custom OpenSSL configured successfully!</source>
+				<target>カスタムのOpenSSLを設定しました！</target>
+			</trans-unit>
+			<trans-unit id="Msg_InvalidExecutable" resname="Msg_InvalidExecutable">
+				<source>Invalid OpenSSL executable</source>
+				<target>無効なOpenSSL実行ファイルです</target>
+			</trans-unit>
+			<trans-unit id="Msg_FileNotFoundAt" resname="Msg_FileNotFoundAt">
+				<source>File not found at: {path}</source>
+				<target>ファイルが見つかりません：{path}</target>
+			</trans-unit>
+			<trans-unit id="Msg_MissingCertOrKey" resname="Msg_MissingCertOrKey">
+				<source>Missing certificate and/or private key. Did you copy the files in step 1?</source>
+				<target>証明書または秘密鍵がありません。ステップ1でファイルをコピーしましたか？</target>
+			</trans-unit>
+			<trans-unit id="Msg_WebServerStopped" resname="Msg_WebServerStopped">
+				<source>Web Server Stopped</source>
+				<target>Webサーバーを停止しました</target>
+			</trans-unit>
+			<trans-unit id="Msg_DidYouGenerateCRT" resname="Msg_DidYouGenerateCRT">
+				<source>Did you generate a CRT certificate?</source>
+				<target>CRT証明書を生成しましたか？</target>
+			</trans-unit>
+			<trans-unit id="Msg_OpenSSLError" resname="Msg_OpenSSLError">
+				<source>OpenSSL Error: {error}</source>
+				<target>OpenSSLエラー：{error}</target>
+			</trans-unit>
+			<trans-unit id="Msg_TimedOut" resname="Msg_TimedOut">
+				<source>OpenSSL command timed out after {seconds} seconds
+
+Command: {command}</source>
+				<target>OpenSSLコマンドが{seconds}秒でタイムアウトしました
+
+コマンド：{command}</target>
+			</trans-unit>
+			<trans-unit id="Msg_OpenSSLNotFound" resname="Msg_OpenSSLNotFound">
+				<source>OpenSSL not found at: {path}
+
+Please install:
+Windows: winget install openssl
+macOS: brew install openssl@3</source>
+				<target>OpenSSLが見つかりません：{path}
+
+インストールしてください：
+Windows：winget install openssl
+macOS：brew install openssl@3</target>
+			</trans-unit>
+			<trans-unit id="Msg_CertCreated" resname="Msg_CertCreated">
+				<source>Success! Certificate created.</source>
+				<target>成功しました！証明書を作成しました。</target>
+			</trans-unit>
+			<trans-unit id="Msg_CertNotGenerated" resname="Msg_CertNotGenerated">
+				<source>Error: Certificate not generated</source>
+				<target>エラー：証明書が生成されませんでした</target>
+			</trans-unit>
+			<trans-unit id="Msg_MissingFiles" resname="Msg_MissingFiles">
+				<source>Missing required files!&#13;&#13;You need:&#13;1. Private key: private_key.key&#13;2. CSR: certificate.csr</source>
+				<target>必要なファイルがありません！&#13;&#13;次のファイルが必要です：&#13;1. 秘密鍵：private_key.key&#13;2. CSR：certificate.csr</target>
+			</trans-unit>
+			<trans-unit id="Msg_KeyCreated" resname="Msg_KeyCreated">
+				<source>Success! Private key created.</source>
+				<target>成功しました！秘密鍵を作成しました。</target>
+			</trans-unit>
+			<trans-unit id="Msg_CouldNotCreateFile" resname="Msg_CouldNotCreateFile">
+				<source>Could not create file</source>
+				<target>ファイルを作成できませんでした</target>
+			</trans-unit>
+			<trans-unit id="Msg_CouldNotGetInfo" resname="Msg_CouldNotGetInfo">
+				<source>Could not get info</source>
+				<target>情報を取得できませんでした</target>
+			</trans-unit>
+			<trans-unit id="Msg_HTTPSActive" resname="Msg_HTTPSActive">
+				<source>HTTPS Active!  https://127.0.0.1/</source>
+				<target>HTTPSが有効になりました！  https://127.0.0.1/</target>
+			</trans-unit>
+			<trans-unit id="Msg_FailedCode" resname="Msg_FailedCode">
+				<source>Failed - Code: {code}</source>
+				<target>失敗しました - コード：{code}</target>
+			</trans-unit>
+			<trans-unit id="Msg_SelfSignedCreated" resname="Msg_SelfSignedCreated">
+				<source>Success! Self-signed certificate created: {name}</source>
+				<target>成功しました！自己署名証明書を作成しました：{name}</target>
+			</trans-unit>
+			<trans-unit id="Msg_4DError" resname="Msg_4DError">
+				<source>4D ERROR{message}</source>
+				<target>4Dエラー：{message}</target>
+			</trans-unit>
+			<trans-unit id="Msg_CSRCreated" resname="Msg_CSRCreated">
+				<source>Success! CSR created.</source>
+				<target>成功しました！CSRを作成しました。</target>
+			</trans-unit>
+			<trans-unit id="Msg_SSLFilesCopied" resname="Msg_SSLFilesCopied">
+				<source> SSL files copied to database folder!&#13;&#13;Files copied:&#13;- cert.pem&#13;- private_key.key&#13;&#13;Location:&#13;{path}</source>
+				<target>SSLファイルをデータベースフォルダーにコピーしました！&#13;&#13;コピーしたファイル：&#13;- cert.pem&#13;- private_key.key&#13;&#13;場所：&#13;{path}</target>
+			</trans-unit>
+			<trans-unit id="Msg_GenerateKeyOrPEM" resname="Msg_GenerateKeyOrPEM">
+				<source>Please generate a private key and/or PEM certificate</source>
+				<target>秘密鍵またはPEM証明書を生成してください</target>
+			</trans-unit>
+			<trans-unit id="Msg_SignedFileCreated" resname="Msg_SignedFileCreated">
+				<source>Success! Signed file created in Resources:
+{name}</source>
+				<target>成功しました！署名済みファイルをResourcesに作成しました：
+{name}</target>
+			</trans-unit>
+			<trans-unit id="Msg_FileNotFoundOpenSSL" resname="Msg_FileNotFoundOpenSSL">
+				<source>Error: OpenSSL could not find the file at: {path}</source>
+				<target>エラー：OpenSSLがファイルを見つけられませんでした：{path}</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

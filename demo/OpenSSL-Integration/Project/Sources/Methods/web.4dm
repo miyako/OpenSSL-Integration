@@ -34,14 +34,14 @@ End try
 
 If ($httpCode=200)
 	$success:=True:C214
-	ALERT:C41("HTTPS Active!  https://127.0.0.1/")
+	ALERT:C41(Localized string("Msg_HTTPSActive"))
 	
 	OBJECT SET VISIBLE:C603(*; "tserverUp"; True:C214)
 	OBJECT SET VISIBLE:C603(*; "tserverDown"; False:C215)
 	
 	
 Else 
-	ALERT:C41("Failed - Code: "+String:C10($httpCode))
+	ALERT:C41(Replace string(Localized string("Msg_FailedCode"); "{code}"; String:C10($httpCode)))
 	OBJECT SET VISIBLE:C603(*; "tserverDown"; True:C214)
 	
 	OBJECT SET VISIBLE:C603(*; "tserverUp"; False:C215)

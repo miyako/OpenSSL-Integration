@@ -4,6 +4,6 @@ Case of
 	: (Form event code:C388=On Clicked:K2:4)
 		$textToCopy:=Form:C1466.Text1
 		SET TEXT TO PASTEBOARD:C523($textToCopy)
-		ALERT:C41("Copied to pasteboard")
+		ALERT:C41(Localized string("Msg_CopiedToPasteboard"))
 		
 End case 

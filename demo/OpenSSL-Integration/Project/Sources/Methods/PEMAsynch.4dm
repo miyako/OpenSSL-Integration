@@ -25,8 +25,5 @@ If (File:C1566($csrPath).exists) & (File:C1566($keyPath).exists)
 	Execute_OpenSSLAsynch($cmd; Formula:C1597(onFileGenerated($certPath)))
 	
 Else 
-	ALERT:C41("Missing required files!"+Char:C90(Carriage return:K15:38)+Char:C90(Carriage return:K15:38)+\
-		"You need:"+Char:C90(Carriage return:K15:38)+\
-		"1. Private key: private_key.key"+Char:C90(Carriage return:K15:38)+\
-		"2. CSR: certificate.csr")
+	ALERT:C41(Localized string("Msg_MissingFiles"))
 End if 

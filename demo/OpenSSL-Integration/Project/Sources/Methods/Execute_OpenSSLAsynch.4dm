@@ -13,7 +13,7 @@ If (Storage:C1525.config#Null:C1517)
 End if 
 
 If (Not:C34(File:C1566($binPath).exists))
-	ALERT:C41("OpenSSL not found at: "+$binPath+"\n\nPlease install:\nWindows: winget install openssl\nmacOS: brew install openssl@3")
+	ALERT:C41(Replace string(Localized string("Msg_OpenSSLNotFound"); "{path}"; $binPath))
 	return 
 End if 
 

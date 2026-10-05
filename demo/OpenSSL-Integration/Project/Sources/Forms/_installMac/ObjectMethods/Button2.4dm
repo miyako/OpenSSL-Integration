@@ -5,7 +5,7 @@ Case of
 		
 		$textToCopy:=Form:C1466.Text2
 		SET TEXT TO PASTEBOARD:C523($textToCopy)
-		ALERT:C41("Copied to pasteboard")
+		ALERT:C41(Localized string("Msg_CopiedToPasteboard"))
 		
 		
 End case 

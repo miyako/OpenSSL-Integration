@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="startupJA.xlf" source-language="en" target-language="ja">
+		<body>
+			<trans-unit id="Startup_WindowTitle" resname="Startup_WindowTitle">
+				<source>OpenSSL System Check</source>
+				<target>OpenSSLシステムチェック</target>
+			</trans-unit>
+			<trans-unit id="Startup_Title" resname="Startup_Title">
+				<source>✦ OpenSSL System Check</source>
+				<target>✦ OpenSSLシステムチェック</target>
+			</trans-unit>
+			<trans-unit id="Startup_Subtitle" resname="Startup_Subtitle">
+				<source>Verifying OpenSSL installation before proceeding</source>
+				<target>続行する前に、OpenSSLのインストールを確認します</target>
+			</trans-unit>
+			<trans-unit id="Startup_Environment" resname="Startup_Environment">
+				<source>ENVIRONMENT</source>
+				<target>環境</target>
+			</trans-unit>
+			<trans-unit id="Startup_Platform" resname="Startup_Platform">
+				<source>Platform</source>
+				<target>プラットフォーム</target>
+			</trans-unit>
+			<trans-unit id="Startup_Architecture" resname="Startup_Architecture">
+				<source>Architecture</source>
+				<target>アーキテクチャ</target>
+			</trans-unit>
+			<trans-unit id="Startup_InstallationPath" resname="Startup_InstallationPath">
+				<source>INSTALLATION PATH</source>
+				<target>インストールパス</target>
+			</trans-unit>
+			<trans-unit id="Startup_BinaryPath" resname="Startup_BinaryPath">
+				<source>Binary path</source>
+				<target>バイナリのパス</target>
+			</trans-unit>
+			<trans-unit id="Startup_Status" resname="Startup_Status">
+				<source>Status</source>
+				<target>状態</target>
+			</trans-unit>
+			<trans-unit id="Startup_Actions" resname="Startup_Actions">
+				<source>ACTIONS</source>
+				<target>操作</target>
+			</trans-unit>
+			<trans-unit id="Startup_CustomPath" resname="Startup_CustomPath">
+				<source>▶  Custom Path</source>
+				<target>▶  カスタムパス</target>
+			</trans-unit>
+			<trans-unit id="Startup_InstallOpenSSL" resname="Startup_InstallOpenSSL">
+				<source>▶  Install OpenSSL</source>
+				<target>▶  OpenSSLをインストール</target>
+			</trans-unit>
+			<trans-unit id="App_ProceedToApp" resname="App_ProceedToApp">
+				<source>▶  Proceed to App</source>
+				<target>▶  アプリへ進む</target>
+			</trans-unit>
+			<trans-unit id="Startup_ProceedNote" resname="Startup_ProceedNote">
+				<source>OpenSSL must be found first</source>
+				<target>先にOpenSSLを検出する必要があります</target>
+			</trans-unit>
+			<trans-unit id="Startup_Footer" resname="Startup_Footer">
+				<source>TN-OpenSSL  •  Certificate Manager  •  System Validation</source>
+				<target>TN-OpenSSL  •  証明書マネージャー  •  システム検証</target>
+			</trans-unit>
+			<trans-unit id="Startup_OpenSSLFound" resname="Startup_OpenSSLFound">
+				<source>OpenSSL Found</source>
+				<target>OpenSSL検出済み</target>
+			</trans-unit>
+			<trans-unit id="Startup_ReloadInfo" resname="Startup_ReloadInfo">
+				<source>⟳ Reload Info</source>
+				<target>⟳ 情報を再読み込み</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
