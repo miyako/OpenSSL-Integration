@@ -1,134 +1,71 @@
-# 4D Technical Note Localisation
+# OpenSSL-Integration
 
-Template for translating a **4D technical note** (an English PDF) and **its companion 4D demo project**
-into another language (Japanese by default), with GitHub Copilot doing the work and you making the
-editorial decisions.
+OpenSSL in 4D using System Workers  
+By Al Mahdi Bakkali, Technical Support Engineer, 4D Inc.  
+Translated from [Technical Note 26-02](https://kb.4d.com/assetid=79941)
 
-The PDF is never patched. It is **disassembled** into plain text, Markdown and figure label files.
-You edit those, then **reassemble** the PDF with one command, as many times as you like.
-Program code is copied byte for byte, and the build refuses to run if code was changed.
+## Japanese translation
 
-```mermaid
-flowchart LR
-  A[document/*.pdf] -->|make extract| B[src/en.md<br>figures/fig-NN.en.txt]
-  B -->|agent translates| C[src/ja.md<br>figures/fig-NN.ja.txt]
-  C -->|you edit| C
-  C -->|make| D[build/*_ja.pdf]
-  E[demo/Project] -->|agent localises: XLIFF, data| F[demo/Project]
-  D & F -->|release| G[GitHub Release]
+The original PDF (`document/26-02_OpenSSL.pdf`) has been disassembled into
+editable plain-text parts. Edit the Japanese files, then run `make` to reassemble the PDF.
+Repeat as often as needed.
+
+```
+document/26-02_OpenSSL.pdf            original (English)
+src/en.md                             English body text (reference, from the PDF)
+src/ja.md                             Japanese body text            <- edit
+figures/fig-NN.png                    original figure images (screenshots)
+figures/fig-NN-ja.png                 Japanese screenshots          <- replace
+figures/fig-NN.en.txt                 English text in each figure (one line per label)
+figures/layout/fig-NN.json            figure settings ("replace" selects the Japanese screenshot)
+glossary.md                           terminology and style decisions
+style/style.css                       page layout and typography
+demo/OpenSSL-Integration/             4D demo project (English and Japanese UI)
+build/26-02_OpenSSL_ja.pdf            output (not committed)
 ```
 
-## Quick start
+### Build
 
-1. **Use this template** (on GitHub, *Use this template → Create a new repository*), then clone it.
-2. Add the source material and push:
-   - the English PDF → `document/<name>.pdf` (exactly one PDF)
-   - the 4D project → `demo/<ProjectName>/` (the folder that contains `Project/`)
-3. Start the agent. Use either:
-   - **Locally** (Copilot CLI or the Copilot app, recommended): open the repository and prompt:
-     > Localise this technical note and its demo into Japanese. Follow .github/copilot-instructions.md and stop at every checkpoint for my review.
-   - **Cloud agent:** open an issue with the **Localisation request** form and assign it to Copilot.
-     The agent works in a pull request. Reply in the PR to give directions at each checkpoint.
-4. Review at each **checkpoint** (see below). Edit files directly or tell the agent what to change.
-5. Release: tell the agent *"release v1.0.0"*, or run the steps under [Release](#release).
-
-## Checkpoints: where you decide
-
-The agent stops and asks you at each of these points:
-
-| # | After | You review / decide |
-|---|---|---|
-| 1 | `make inspect` | Detected heading, code and caption styles in `technote.json`; target language; output style |
-| 2 | `make extract` | `src/en.md` reads correctly (headings, code blocks, figures in the right places); OCR'd figure text |
-| 3 | First translation | `src/ja.md`, `glossary.md`: terminology and tone |
-| 4 | Figures | Contact sheets `build/contact-N.png`; which screenshots need a real localised screenshot |
-| 5 | Demo data (optional) | Whether to replace the sample data (e.g. places) with local equivalents, and which ones |
-| 6 | 4D project | Localisation plan: XLIFF scope, new attributes, UI behaviour |
-| 7 | Release | Final PDF and demo; the repository README (from `.github/templates/README.technote.md`); version tag |
-
-Edits are always safe. Generated output goes to `build/` only, and `make extract` never overwrites existing files.
-
-## Files you edit
-
-| File | What |
-|---|---|
-| `src/ja.md` | Translated body text (Markdown). Keep the block structure parallel to `src/en.md`. **Don't touch code blocks.** |
-| `figures/fig-NN.ja.txt` | Text drawn in figure NN, one line per line of `fig-NN.en.txt` (see below) |
-| `figures/layout/fig-NN.json` | Optional per-label tweaks (size, weight, alignment, position) |
-| `figures/fig-NN-ja.png` | Optional ready-made replacement image (e.g. a screenshot of the localised app) |
-| `glossary.md` | Terminology decisions. Change a term here first. |
-| `technote.json` | Document settings (normally written once by the agent) |
-
-### Figure text rules
-
-Line N of `fig-NN.ja.txt` corresponds to line N of `fig-NN.en.txt`:
-
-- **identical to the English line:** the original pixels are kept. Use this for code, numbers and identifiers.
-- **empty:** the English text is erased and nothing is drawn (to merge two lines into one).
-- **anything else:** the English text is erased and this text is drawn in its place.
-
-Per-label overrides in `figures/layout/fig-NN.json` → `items[N]`:
-`"scale": 1.2`, `"size": 28`, `"weight": "light"|"regular"|"bold"`, `"align": "left"|"center"`,
-`"dx"`, `"dy"`, `"box": [x, y, w, h]`, `"bg"`, `"fg"`, `"erase_pad"`.
-Per figure: `"localize": false` keeps the image unchanged; `"replace": "fig-NN-ja.png"` uses a ready-made image.
-
-## Commands
-
-| Command | Does |
-|---|---|
-| `make setup` | Create `.venv` and install Python packages |
-| `make inspect` | Analyse the PDF and suggest `technote.json` (written only if not configured yet) |
-| `make extract` | Disassemble the PDF (one time; never overwrites) |
-| `make check` | Verify code blocks are unchanged and figure references match |
-| `make figures` | Render localised figures into `build/figures/` |
-| `make review` | Contact sheets comparing original and localised figures (`FIGS="02 05"` to select) |
-| `make` | check → figures → PDF in `build/` |
-| `make demo-zip` | Zip each committed 4D project in `demo/` into `build/<Name>.zip` |
-| `make release-assets` | PDF + demo zips |
-| `make clean` | Remove `build/` |
-
-## Requirements
-
-| | macOS (local) | Linux (cloud agent / Actions) |
-|---|---|---|
-| Python 3.10+ | ✓ | ✓ (preinstalled) |
-| Google Chrome / Chromium | `/Applications/Google Chrome.app` | preinstalled on GitHub runners, or set `$CHROME` |
-| Tesseract OCR | `brew install tesseract` | `apt install tesseract-ocr` |
-| Japanese fonts for figures | Hiragino (built in) | `apt install fonts-noto-cjk` |
-| tool4d (4D headless checks) | optional, `/Applications/tool4d/…` or `$TOOL4D` | not available, so 4D checks are skipped |
-
-`.github/workflows/copilot-setup-steps.yml` prepares the Linux environment for the cloud agent.
-
-> **Note:** figures and PDF text are rendered with Hiragino on macOS and Noto Sans CJK on Linux,
-> so the two builds look slightly different. Build the final release on the platform you reviewed.
-
-## Release
+Requires macOS (Hiragino fonts), Python 3, and Google Chrome (or Edge/Chromium) for PDF printing.
 
 ```sh
-make release-assets                       # build/<name>_ja.pdf, build/<Demo>.zip
-git tag v1.0.0 && git push origin v1.0.0
-gh release create v1.0.0 build/*_ja.pdf build/*.zip --title "…" --notes "…"
+make          # check + render figures + build/26-02_OpenSSL_ja.pdf
+make check    # only verify that code blocks and figure references are intact
+make figures  # only re-render build/figures/*.png
 ```
 
-Before the first release, the agent replaces this README with the converted document's own README, built from
-`.github/templates/README.technote.md` (title, introduction, downloads, demo notes, differences, how to edit).
-This usage guide then stays available in the template repository.
+### Editing the body text (`src/ja.md`)
 
-If you push a tag without creating the release yourself, `.github/workflows/release.yml` builds the assets
-on Linux and publishes them. It skips the upload if the release already has assets.
+- Markdown: `##`/`###`/`####` headings, `-` lists, `**bold**`, tables, `>` notes.
+- 4D code blocks and shell commands must stay byte-identical to `src/en.md`; the build refuses to run otherwise.
+  ```` ```text ```` blocks hold sample values (the OpenSSL configuration file) and may differ.
+- `![caption](fig-NN)` places a figure; translate the caption, keep `fig-NN`.
+- Paragraphs are in the same order as `src/en.md`, so the two files can be compared side by side.
+- The table of contents and its page numbers are generated automatically.
 
-## Layout
+### Figures
 
-```
-document/            original PDF (read-only)
-src/                 en.md (extracted), ja.md (translation)
-figures/             fig-NN.png, fig-NN.en.txt, fig-NN.ja.txt, layout/fig-NN.json
-demo/<Name>/         4D project
-data/                localised demo data (optional)
-glossary.md          terminology
-technote.json        document-specific settings
-style/style.css      print stylesheet
-tools/               pipeline (Python)
-.github/             agent instructions, skills, workflows, templates/README.technote.md
-build/               output (git-ignored)
-```
+All four figures (`fig-01` to `fig-04`) are full-screen screenshots of the demo on Windows. Instead of
+overlaying text, the layout's `"replace": "fig-NN-ja.png"` swaps in the Japanese screenshot
+`figures/fig-NN-ja.png`, taken from the localised demo and cropped to the 4D window
+(the original `fig-NN.png` is kept for reference).
+
+### Demo (`demo/OpenSSL-Integration/`)
+
+The demo runs in English or Japanese, following the system language (4D 21 or later):
+
+- Form labels, window titles, the menu and alert messages are in XLIFF files:
+  `Resources/en.lproj/*EN.xlf` and `Resources/ja.lproj/*JA.xlf`.
+  Messages with values (paths, seconds, error text) use `{placeholder}` templates filled by `Replace string`.
+- Form and method names, OpenSSL commands, file names and certificate field codes (C, ST, O, OU, CN) are not translated.
+- Labels were resized to fit the Japanese text.
+- On Windows, ARM processors are detected (OpenSSL-Win64-ARM path) and the architecture is shown in the startup window.
+- Compilation errors in the original project were fixed (variable declarations in `_startupForm`, a condition in `signXML`).
+
+OpenSSL must be installed separately (`winget install openssl` on Windows, `brew install openssl@3` on macOS).
+
+### Re-extracting
+
+`make extract` disassembles the PDF again but never overwrites existing files.
+`.venv/bin/python tools/extract.py --force` starts over from scratch (discards layout tweaks
+and `en` corrections; `ja` files are not touched).
