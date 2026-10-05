@@ -176,5 +176,6 @@
    "align": "center"
   }
  ],
- "$note": "App screenshot (full-screen 4D window on Windows). Not localised: replace with a Japanese screenshot via \"replace\"."
+ "$note": "App screenshot (full-screen 4D window on Windows). Japanese version: fig-04-ja.png (taken from the localised demo, 3840x2160).",
+ "replace": "fig-04-ja.png"
 }
