@@ -1,13 +1,33 @@
 //%attributes = {}
-#DECLARE($OK : Integer)
+#DECLARE($params : Object)
+
+var $splashWindowTitle : Text
+var $windowRef : Integer
+$splashWindowTitle:=Localized string("Startup_WindowTitle")
+
 If (Count parameters:C259=0)
-	BRING TO FRONT:C326(New process:C317(Current method name:C684; 0; "Demo"; 1; *))
+	
+	ARRAY LONGINT($windows; 0)
+	WINDOW LIST($windows)
+	
+	var $i : Integer
+	For ($i; 1; Size of array($windows))
+		$windowRef:=$windows{$i}
+		If (Window process($windowRef)=1) && (Get window title($windowRef)=$splashWindowTitle)
+			var $x; $y; $bottom; $right : Integer
+			GET WINDOW RECT($x; $y; $bottom; $right; $windowRef)
+			CALL FORM($windowRef; Formula(SET WINDOW RECT($x; $y; $bottom; $right; $windowRef)))
+			return 
+		End if 
+	End for 
+	
+	CALL WORKER:C1389(1; Current method name:C684; {})
+	
 Else 
 	
 	// On Startup Method
 	var $isWindows; $isMacOS; $isSilicon; $isArm : Boolean
 	var $systemInfo : Object
-	var $windowRef : Integer
 	var $openSSLPath : Text
 	var $openSSLFile : 4D:C1709.File
 	var $os : Text
@@ -84,8 +104,10 @@ Else
 		End use 
 	End use 
 	
+	SET MENU BAR(1)
+	
 	$windowRef:=Open form window:C675("_startupForm"; Plain form window:K39:10; Horizontally centered:K39:1; Vertically centered:K39:4)
-	DIALOG:C40("_startupForm")
-	CLOSE WINDOW:C154($windowRef)
+	SET WINDOW TITLE($splashWindowTitle; $windowRef)
+	DIALOG:C40("_startupForm"; *)
 	
 End if 
