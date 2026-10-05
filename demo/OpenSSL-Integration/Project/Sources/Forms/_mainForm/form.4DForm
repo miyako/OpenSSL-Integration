@@ -1177,7 +1177,7 @@
 					"type": "text",
 					"top": 163,
 					"left": 66,
-					"width": 300,
+					"width": 320,
 					"height": 14,
 					"text": ":xliff:Main_PlaceCertFiles",
 					"fontSize": 12,
@@ -1616,7 +1616,7 @@
 					"type": "text",
 					"top": 182,
 					"left": 66,
-					"width": 300,
+					"width": 320,
 					"height": 14,
 					"text": ":xliff:Main_GenerateFirst",
 					"fontSize": 12,
@@ -1840,9 +1840,10 @@
 					]
 				}
 			}
-		}
+		},
+		null
 	],
-	"geometryStamp": 738,
+	"geometryStamp": 741,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
