@@ -1840,10 +1840,9 @@
 					]
 				}
 			}
-		},
-		null
+		}
 	],
-	"geometryStamp": 741,
+	"geometryStamp": 742,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
