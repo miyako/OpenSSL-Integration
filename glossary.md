@@ -60,7 +60,7 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 | self-signed certificate | 自己署名証明書 | |
 | Certificate Authority (CA) | 認証局（CA） | |
 | Distinguished Name (DN) | 識別名（DN） | |
-| Common Name (CN) | コモンネーム（CN） | DN fields: 国（C）、都道府県（ST）、市区町村（L）、組織（O）、部門（OU）. Approved |
+| Common Name (CN) | コモンネーム（CN） | DN fields: 国（C）、都道府県（ST）、市区町村（L）、組織（O）、部門（OU） |
 | serial number | シリアル番号 | |
 | configuration file | 設定ファイル | |
 | directive | ディレクティブ | |
