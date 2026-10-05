@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="installEN.xlf" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="InstallMac_Title" resname="InstallMac_Title">
+				<source>Install OpenSSL — macOS</source>
+				<target>Install OpenSSL — macOS</target>
+			</trans-unit>
+			<trans-unit id="InstallMac_Subtitle" resname="InstallMac_Subtitle">
+				<source>Follow the steps below to install OpenSSL via Homebrew</source>
+				<target>Follow the steps below to install OpenSSL via Homebrew</target>
+			</trans-unit>
+			<trans-unit id="InstallMac_Step1" resname="InstallMac_Step1">
+				<source>Install Homebrew (if not already installed)</source>
+				<target>Install Homebrew (if not already installed)</target>
+			</trans-unit>
+			<trans-unit id="Install_Copy" resname="Install_Copy">
+				<source>⎘ Copy</source>
+				<target>⎘ Copy</target>
+			</trans-unit>
+			<trans-unit id="InstallMac_Step2" resname="InstallMac_Step2">
+				<source>Install OpenSSL via Homebrew</source>
+				<target>Install OpenSSL via Homebrew</target>
+			</trans-unit>
+			<trans-unit id="InstallMac_Step3" resname="InstallMac_Step3">
+				<source>Verify OpenSSL version</source>
+				<target>Verify OpenSSL version</target>
+			</trans-unit>
+			<trans-unit id="InstallMac_MoreOptions" resname="InstallMac_MoreOptions">
+				<source>For more installation options, check the documentation</source>
+				<target>For more installation options, check the documentation</target>
+			</trans-unit>
+			<trans-unit id="Install_CheckInstallation" resname="Install_CheckInstallation">
+				<source>▶  Check OpenSSL Installation</source>
+				<target>▶  Check OpenSSL Installation</target>
+			</trans-unit>
+			<trans-unit id="InstallWin_Title" resname="InstallWin_Title">
+				<source>Install OpenSSL — Windows</source>
+				<target>Install OpenSSL — Windows</target>
+			</trans-unit>
+			<trans-unit id="InstallWin_Subtitle" resname="InstallWin_Subtitle">
+				<source>Follow the steps below to install OpenSSL via Winget</source>
+				<target>Follow the steps below to install OpenSSL via Winget</target>
+			</trans-unit>
+			<trans-unit id="InstallWin_Step1" resname="InstallWin_Step1">
+				<source>Upgrade Winget</source>
+				<target>Upgrade Winget</target>
+			</trans-unit>
+			<trans-unit id="InstallWin_Step2" resname="InstallWin_Step2">
+				<source>Install OpenSSL</source>
+				<target>Install OpenSSL</target>
+			</trans-unit>
+			<trans-unit id="InstallWin_Step3" resname="InstallWin_Step3">
+				<source>Search for OpenSSL packages (optional)</source>
+				<target>Search for OpenSSL packages (optional)</target>
+			</trans-unit>
+			<trans-unit id="InstallWin_MoreOptions" resname="InstallWin_MoreOptions">
+				<source>For more installation options, check the documentation — Section 2</source>
+				<target>For more installation options, check the documentation — Section 2</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

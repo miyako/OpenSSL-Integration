@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="messagesEN.xlf" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="Msg_CopiedToPasteboard" resname="Msg_CopiedToPasteboard">
+				<source>Copied to pasteboard</source>
+				<target>Copied to pasteboard</target>
+			</trans-unit>
+			<trans-unit id="Msg_VersionNotFound" resname="Msg_VersionNotFound">
+				<source>OpenSSL not found or error occurred</source>
+				<target>OpenSSL not found or error occurred</target>
+			</trans-unit>
+			<trans-unit id="Msg_LocateOpenSSLExe" resname="Msg_LocateOpenSSLExe">
+				<source>Locate openssl.exe</source>
+				<target>Locate openssl.exe</target>
+			</trans-unit>
+			<trans-unit id="Msg_LocateOpenSSLExecutable" resname="Msg_LocateOpenSSLExecutable">
+				<source>Locate openssl executable</source>
+				<target>Locate openssl executable</target>
+			</trans-unit>
+			<trans-unit id="Msg_CustomConfigured" resname="Msg_CustomConfigured">
+				<source>Custom OpenSSL configured successfully!</source>
+				<target>Custom OpenSSL configured successfully!</target>
+			</trans-unit>
+			<trans-unit id="Msg_InvalidExecutable" resname="Msg_InvalidExecutable">
+				<source>Invalid OpenSSL executable</source>
+				<target>Invalid OpenSSL executable</target>
+			</trans-unit>
+			<trans-unit id="Msg_FileNotFoundAt" resname="Msg_FileNotFoundAt">
+				<source>File not found at: {path}</source>
+				<target>File not found at: {path}</target>
+			</trans-unit>
+			<trans-unit id="Msg_MissingCertOrKey" resname="Msg_MissingCertOrKey">
+				<source>Missing certificate and/or private key. Did you copy the files in step 1?</source>
+				<target>Missing certificate and/or private key. Did you copy the files in step 1?</target>
+			</trans-unit>
+			<trans-unit id="Msg_WebServerStopped" resname="Msg_WebServerStopped">
+				<source>Web Server Stopped</source>
+				<target>Web Server Stopped</target>
+			</trans-unit>
+			<trans-unit id="Msg_DidYouGenerateCRT" resname="Msg_DidYouGenerateCRT">
+				<source>Did you generate a CRT certificate?</source>
+				<target>Did you generate a CRT certificate?</target>
+			</trans-unit>
+			<trans-unit id="Msg_OpenSSLError" resname="Msg_OpenSSLError">
+				<source>OpenSSL Error: {error}</source>
+				<target>OpenSSL Error: {error}</target>
+			</trans-unit>
+			<trans-unit id="Msg_TimedOut" resname="Msg_TimedOut">
+				<source>OpenSSL command timed out after {seconds} seconds
+
+Command: {command}</source>
+				<target>OpenSSL command timed out after {seconds} seconds
+
+Command: {command}</target>
+			</trans-unit>
+			<trans-unit id="Msg_OpenSSLNotFound" resname="Msg_OpenSSLNotFound">
+				<source>OpenSSL not found at: {path}
+
+Please install:
+Windows: winget install openssl
+macOS: brew install openssl@3</source>
+				<target>OpenSSL not found at: {path}
+
+Please install:
+Windows: winget install openssl
+macOS: brew install openssl@3</target>
+			</trans-unit>
+			<trans-unit id="Msg_CertCreated" resname="Msg_CertCreated">
+				<source>Success! Certificate created.</source>
+				<target>Success! Certificate created.</target>
+			</trans-unit>
+			<trans-unit id="Msg_CertNotGenerated" resname="Msg_CertNotGenerated">
+				<source>Error: Certificate not generated</source>
+				<target>Error: Certificate not generated</target>
+			</trans-unit>
+			<trans-unit id="Msg_MissingFiles" resname="Msg_MissingFiles">
+				<source>Missing required files!&#13;&#13;You need:&#13;1. Private key: private_key.key&#13;2. CSR: certificate.csr</source>
+				<target>Missing required files!&#13;&#13;You need:&#13;1. Private key: private_key.key&#13;2. CSR: certificate.csr</target>
+			</trans-unit>
+			<trans-unit id="Msg_KeyCreated" resname="Msg_KeyCreated">
+				<source>Success! Private key created.</source>
+				<target>Success! Private key created.</target>
+			</trans-unit>
+			<trans-unit id="Msg_CouldNotCreateFile" resname="Msg_CouldNotCreateFile">
+				<source>Could not create file</source>
+				<target>Could not create file</target>
+			</trans-unit>
+			<trans-unit id="Msg_CouldNotGetInfo" resname="Msg_CouldNotGetInfo">
+				<source>Could not get info</source>
+				<target>Could not get info</target>
+			</trans-unit>
+			<trans-unit id="Msg_HTTPSActive" resname="Msg_HTTPSActive">
+				<source>HTTPS Active!  https://127.0.0.1/</source>
+				<target>HTTPS Active!  https://127.0.0.1/</target>
+			</trans-unit>
+			<trans-unit id="Msg_FailedCode" resname="Msg_FailedCode">
+				<source>Failed - Code: {code}</source>
+				<target>Failed - Code: {code}</target>
+			</trans-unit>
+			<trans-unit id="Msg_SelfSignedCreated" resname="Msg_SelfSignedCreated">
+				<source>Success! Self-signed certificate created: {name}</source>
+				<target>Success! Self-signed certificate created: {name}</target>
+			</trans-unit>
+			<trans-unit id="Msg_4DError" resname="Msg_4DError">
+				<source>4D ERROR{message}</source>
+				<target>4D ERROR{message}</target>
+			</trans-unit>
+			<trans-unit id="Msg_CSRCreated" resname="Msg_CSRCreated">
+				<source>Success! CSR created.</source>
+				<target>Success! CSR created.</target>
+			</trans-unit>
+			<trans-unit id="Msg_SSLFilesCopied" resname="Msg_SSLFilesCopied">
+				<source> SSL files copied to database folder!&#13;&#13;Files copied:&#13;- cert.pem&#13;- private_key.key&#13;&#13;Location:&#13;{path}</source>
+				<target> SSL files copied to database folder!&#13;&#13;Files copied:&#13;- cert.pem&#13;- private_key.key&#13;&#13;Location:&#13;{path}</target>
+			</trans-unit>
+			<trans-unit id="Msg_GenerateKeyOrPEM" resname="Msg_GenerateKeyOrPEM">
+				<source>Please generate a private key and/or PEM certificate</source>
+				<target>Please generate a private key and/or PEM certificate</target>
+			</trans-unit>
+			<trans-unit id="Msg_SignedFileCreated" resname="Msg_SignedFileCreated">
+				<source>Success! Signed file created in Resources:
+{name}</source>
+				<target>Success! Signed file created in Resources:
+{name}</target>
+			</trans-unit>
+			<trans-unit id="Msg_FileNotFoundOpenSSL" resname="Msg_FileNotFoundOpenSSL">
+				<source>Error: OpenSSL could not find the file at: {path}</source>
+				<target>Error: OpenSSL could not find the file at: {path}</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

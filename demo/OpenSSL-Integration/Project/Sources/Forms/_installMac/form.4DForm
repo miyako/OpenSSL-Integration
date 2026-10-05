@@ -1,0 +1,383 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"windowMinWidth": 640,
+	"windowMinHeight": 520,
+	"windowMaxWidth": 640,
+	"windowMaxHeight": 520,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": ":xliff:InstallMac_Title",
+	"destination": "detailScreen",
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"headerBar": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 646,
+					"height": 68,
+					"fill": "#6495ed",
+					"stroke": "transparent",
+					"strokeWidth": 0,
+					"borderStyle": "none"
+				},
+				"headerAccentStripe": {
+					"type": "rectangle",
+					"top": 64,
+					"left": 0,
+					"width": 640,
+					"height": 4,
+					"fill": "#60a5fa",
+					"stroke": "transparent",
+					"strokeWidth": 0,
+					"borderStyle": "none"
+				},
+				"headerTitle": {
+					"type": "text",
+					"top": 13,
+					"left": 60,
+					"width": 380,
+					"height": 24,
+					"text": ":xliff:InstallMac_Title",
+					"fontSize": 17,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"headerSub": {
+					"type": "text",
+					"top": 88,
+					"left": 26,
+					"width": 420,
+					"height": 16,
+					"text": ":xliff:InstallMac_Subtitle",
+					"fontSize": 11,
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"step1TopBar": {
+					"type": "rectangle",
+					"top": 613,
+					"left": -11,
+					"width": 657,
+					"height": 6,
+					"fill": "#3b82f6",
+					"stroke": "transparent",
+					"strokeWidth": 0,
+					"cornerRadius": 10,
+					"borderStyle": "none"
+				},
+				"step1Num": {
+					"type": "oval",
+					"top": 136,
+					"left": 24,
+					"width": 26,
+					"height": 26,
+					"fill": "#1a56db",
+					"stroke": "transparent",
+					"strokeWidth": 0
+				},
+				"step1NumText": {
+					"type": "text",
+					"top": 141,
+					"left": 33,
+					"width": 10,
+					"height": 16,
+					"text": "1",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent",
+					"stroke": "#FFFFFF"
+				},
+				"step1Label": {
+					"type": "text",
+					"top": 136,
+					"left": 60,
+					"width": 300,
+					"height": 16,
+					"text": ":xliff:InstallMac_Step1",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"Input": {
+					"type": "input",
+					"left": 60,
+					"top": 158,
+					"width": 460,
+					"height": 28,
+					"dataSource": "Form:C1466.Text",
+					"fontSize": 11,
+					"fontFamily": "Courier New",
+					"fill": "#eff6ff",
+					"stroke": "#191970",
+					"strokeWidth": 1,
+					"cornerRadius": 5,
+					"borderStyle": "solid",
+					"fontColor": "#1d4ed8",
+					"enterable": false,
+					"focusable": false
+				},
+				"Button": {
+					"type": "button",
+					"text": ":xliff:Install_Copy",
+					"top": 158,
+					"left": 532,
+					"width": 72,
+					"height": 28,
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"fill": "#dbeafe",
+					"stroke": "#191970",
+					"fontColor": "#1e40af",
+					"cornerRadius": 6,
+					"borderStyle": "none",
+					"strokeWidth": 1,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm"
+				},
+				"step2Num": {
+					"type": "oval",
+					"top": 244,
+					"left": 24,
+					"width": 26,
+					"height": 26,
+					"fill": "#3b82f6",
+					"stroke": "transparent",
+					"strokeWidth": 0
+				},
+				"step2NumText": {
+					"type": "text",
+					"top": 249,
+					"left": 33,
+					"width": 10,
+					"height": 16,
+					"text": "2",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent",
+					"stroke": "#FFFFFF"
+				},
+				"step2Label": {
+					"type": "text",
+					"top": 244,
+					"left": 60,
+					"width": 300,
+					"height": 16,
+					"text": ":xliff:InstallMac_Step2",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 60,
+					"top": 266,
+					"width": 460,
+					"height": 28,
+					"dataSource": "Form:C1466.Text1",
+					"fontSize": 11,
+					"fontFamily": "Courier New",
+					"fill": "#eff6ff",
+					"stroke": "#191970",
+					"strokeWidth": 1,
+					"cornerRadius": 5,
+					"borderStyle": "solid",
+					"fontColor": "#1d4ed8",
+					"enterable": false,
+					"focusable": false
+				},
+				"Button1": {
+					"type": "button",
+					"text": ":xliff:Install_Copy",
+					"top": 266,
+					"left": 532,
+					"width": 72,
+					"height": 28,
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"fill": "#dbeafe",
+					"stroke": "#191970",
+					"fontColor": "#1e40af",
+					"cornerRadius": 6,
+					"borderStyle": "none",
+					"strokeWidth": 1,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button1.4dm"
+				},
+				"step3Num": {
+					"type": "oval",
+					"top": 352,
+					"left": 24,
+					"width": 26,
+					"height": 26,
+					"fill": "#60a5fa",
+					"stroke": "transparent",
+					"strokeWidth": 0
+				},
+				"step3NumText": {
+					"type": "text",
+					"top": 357,
+					"left": 33,
+					"width": 10,
+					"height": 16,
+					"text": "3",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent",
+					"stroke": "#FFFFFF"
+				},
+				"step3Label": {
+					"type": "text",
+					"top": 352,
+					"left": 60,
+					"width": 300,
+					"height": 16,
+					"text": ":xliff:InstallMac_Step3",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"Input2": {
+					"type": "input",
+					"left": 60,
+					"top": 374,
+					"width": 460,
+					"height": 28,
+					"dataSource": "Form:C1466.Text2",
+					"fontSize": 11,
+					"fontFamily": "Courier New",
+					"fill": "#eff6ff",
+					"stroke": "#191970",
+					"strokeWidth": 1,
+					"cornerRadius": 5,
+					"borderStyle": "solid",
+					"fontColor": "#1d4ed8",
+					"enterable": false,
+					"focusable": false
+				},
+				"Button2": {
+					"type": "button",
+					"text": ":xliff:Install_Copy",
+					"top": 374,
+					"left": 532,
+					"width": 72,
+					"height": 28,
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"fill": "#dbeafe",
+					"stroke": "#191970",
+					"fontColor": "#1e40af",
+					"cornerRadius": 6,
+					"borderStyle": "none",
+					"strokeWidth": 1,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button2.4dm"
+				},
+				"infoBox": {
+					"type": "rectangle",
+					"top": 446,
+					"left": 14,
+					"width": 600,
+					"height": 36,
+					"fill": "#dbeafe",
+					"stroke": "#93c5fd",
+					"strokeWidth": 1,
+					"cornerRadius": 8,
+					"borderStyle": "solid"
+				},
+				"infoIcon": {
+					"type": "text",
+					"top": 456,
+					"left": 26,
+					"width": 20,
+					"height": 16,
+					"text": "ℹ️",
+					"fontSize": 12,
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 458,
+					"left": 50,
+					"width": 540,
+					"height": 14,
+					"text": ":xliff:InstallMac_MoreOptions",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"Button4": {
+					"type": "button",
+					"text": ":xliff:Install_CheckInstallation",
+					"top": 553,
+					"left": 144,
+					"width": 320,
+					"height": 40,
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"fill": "#1a56db",
+					"stroke": "#1a56db",
+					"fontColor": "#ffffff",
+					"cornerRadius": 8,
+					"borderStyle": "none",
+					"strokeWidth": 0,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button4.4dm"
+				}
+			}
+		}
+	],
+	"geometryStamp": 67,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"menuBar": "Barre #1"
+}

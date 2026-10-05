@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="checkOpenSSLEN.xlf" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="Check_Title" resname="Check_Title">
+				<source>OpenSSL Check</source>
+				<target>OpenSSL Check</target>
+			</trans-unit>
+			<trans-unit id="Check_Subtitle" resname="Check_Subtitle">
+				<source>Detect and verify your OpenSSL installation</source>
+				<target>Detect and verify your OpenSSL installation</target>
+			</trans-unit>
+			<trans-unit id="Check_CheckOpenSSL" resname="Check_CheckOpenSSL">
+				<source>▶  Check OpenSSL</source>
+				<target>▶  Check OpenSSL</target>
+			</trans-unit>
+			<trans-unit id="Check_Version" resname="Check_Version">
+				<source>OpenSSL Version</source>
+				<target>OpenSSL Version</target>
+			</trans-unit>
+			<trans-unit id="Check_Path" resname="Check_Path">
+				<source>OpenSSL Path</source>
+				<target>OpenSSL Path</target>
+			</trans-unit>
+			<trans-unit id="Check_OpenSSLFound" resname="Check_OpenSSLFound">
+				<source> OpenSSL Found</source>
+				<target> OpenSSL Found</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

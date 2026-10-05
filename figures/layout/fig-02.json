@@ -1,0 +1,127 @@
+{
+ "source": "fig-02.png",
+ "page": 7,
+ "width_pt": 718.1,
+ "localize": false,
+ "items": [
+  {
+   "box": [
+    40,
+    36,
+    64,
+    9
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    119,
+    36,
+    24,
+    12
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    503,
+    253,
+    237,
+    26
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    614,
+    308,
+    320,
+    18
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    615,
+    331,
+    190,
+    11
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    750,
+    424,
+    173,
+    13
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    741,
+    434,
+    215,
+    28
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    738,
+    464,
+    77,
+    28
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    901,
+    489,
+    60,
+    10
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    741,
+    554,
+    83,
+    11
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    867,
+    576,
+    21,
+    7
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    780,
+    682,
+    39,
+    11
+   ],
+   "align": "center"
+  },
+  {
+   "box": [
+    856,
+    704,
+    63,
+    14
+   ],
+   "align": "center"
+  }
+ ],
+ "$note": "App screenshot (full-screen 4D window on Windows). Japanese version: fig-02-ja.png (taken from the localised demo, 3840x2160).",
+ "replace": "fig-02-ja.png"
+}

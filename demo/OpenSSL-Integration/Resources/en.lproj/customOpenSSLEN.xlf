@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+	<file datatype="plaintext" original="customOpenSSLEN.xlf" source-language="en" target-language="en">
+		<body>
+			<trans-unit id="Custom_Title" resname="Custom_Title">
+				<source>Custom OpenSSL Path</source>
+				<target>Custom OpenSSL Path</target>
+			</trans-unit>
+			<trans-unit id="Custom_Subtitle" resname="Custom_Subtitle">
+				<source>Point to a custom OpenSSL executable on your system</source>
+				<target>Point to a custom OpenSSL executable on your system</target>
+			</trans-unit>
+			<trans-unit id="Custom_ExecutableLocation" resname="Custom_ExecutableLocation">
+				<source>EXECUTABLE LOCATION</source>
+				<target>EXECUTABLE LOCATION</target>
+			</trans-unit>
+			<trans-unit id="Custom_SelectedPath" resname="Custom_SelectedPath">
+				<source>Selected path</source>
+				<target>Selected path</target>
+			</trans-unit>
+			<trans-unit id="Custom_Browse" resname="Custom_Browse">
+				<source>📂  Browse...</source>
+				<target>📂  Browse...</target>
+			</trans-unit>
+			<trans-unit id="Custom_FoundAtPath" resname="Custom_FoundAtPath">
+				<source> OpenSSL found at this path</source>
+				<target> OpenSSL found at this path</target>
+			</trans-unit>
+			<trans-unit id="App_ProceedToApp" resname="App_ProceedToApp">
+				<source>▶  Proceed to App</source>
+				<target>▶  Proceed to App</target>
+			</trans-unit>
+			<trans-unit id="Custom_MacGoToFolder" resname="Custom_MacGoToFolder">
+				<source>In macOS:  ⇧ Shift + ⌘ Command + G - Paste: </source>
+				<target>In macOS:  ⇧ Shift + ⌘ Command + G - Paste: </target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

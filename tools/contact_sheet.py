@@ -37,7 +37,7 @@ def main():
     ap.add_argument("--compare", action="store_true", help="stack original above localised")
     args = ap.parse_args()
     names = [f"fig-{int(n):02d}" for n in args.figures] or sorted(
-        p.stem for p in (OUT / "figures").glob("fig-*.png"))
+        p.stem for p in (OUT / "figures").glob("fig-*.png") if (FIG / p.name).exists())
     if not names:
         sys.exit("No figures in build/figures; run `make figures` first")
     for old in OUT.glob("contact-*.png"):

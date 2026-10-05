@@ -37,8 +37,52 @@ Full-width `（）` and `：` in prose. First occurrence of a technical term: �
 
 | English | 日本語 | Notes |
 |---|---|---|
+| System Worker(s) (the feature) | システムワーカー | As in the 4D docs; used in the title and prose |
+| SystemWorker / 4D.SystemWorker class | SystemWorker / 4D.SystemWorkerクラス | Class name kept in Latin script |
+| callback (function) | コールバック（関数） | |
+| completion callback / function | 完了コールバック / 完了関数 | |
+| worker process | ワーカープロセス | |
+| asynchronous / synchronous | 非同期 / 同期 | |
+| non-blocking / blocking | ノンブロッキング / ブロッキング | |
+| constructor | コンストラクター | |
+| property | プロパティ | |
+| File / Folder object | Fileオブジェクト / Folderオブジェクト | |
+| project folder | プロジェクトフォルダー | 4D docs use the long vowel: フォルダー, サーバー, パラメーター, ブラウザー |
+| Resources folder | Resourcesフォルダー | |
+| (OpenSSL command-line) parameter | パラメーター | Not 引数, which is for 4D method/function parameters |
+| flag / option | フラグ / オプション | Follows the English wording of each sentence |
+| subcommand | サブコマンド | |
+| cryptographic asset(s) | 暗号関連リソース | Not 暗号資産, which means cryptocurrency in Japanese |
+| cryptographic operation | 暗号処理 | |
+| private key / public key | 秘密鍵 / 公開鍵 | |
+| key pair | 鍵ペア | |
+| Certificate Signing Request (CSR) | 証明書署名要求（CSR） | First occurrence: 証明書署名要求（CSR：Certificate Signing Request） |
+| self-signed certificate | 自己署名証明書 | |
+| Certificate Authority (CA) | 認証局（CA） | |
+| Distinguished Name (DN) | 識別名（DN） | |
+| Common Name (CN) | コモンネーム（CN） | DN fields: 国（C）、都道府県（ST）、市区町村（L）、組織（O）、部門（OU） |
+| serial number | シリアル番号 | |
+| configuration file | 設定ファイル | |
+| directive | ディレクティブ | |
+| root of trust | 信頼の基点（root of trust） | |
+| digital signature | デジタル署名 | |
+| e-invoicing | デジタルインボイス | First occurrence: デジタルインボイス（e-invoicing） |
+| authenticity / integrity | 真正性 / 完全性 | |
+| line ending | 改行コード | |
+| trust store | トラストストア | |
+| extended validation certificate | EV（Extended Validation）証明書 | |
+| headless execution | ヘッドレス実行 | |
+| OpenSSL system check form | OpenSSLシステムチェックフォーム | Descriptive only; form names are source code and are not localised |
+| demonstration application | デモアプリケーション | |
+| technical note | テクニカルノート | |
+
+Quotations from the 4D documentation use the official Japanese text verbatim (e.g. the SystemWorker note, from https://developer.4d.com/docs/ja/API/SystemWorkerClass).
 
 ## Proper nouns in examples
 
 | English | 日本語 | Notes |
 |---|---|---|
+| Al Mahdi Bakkali | Al Mahdi Bakkali | Author name kept in Latin script |
+| Finder / File Explorer | Finder / エクスプローラー | |
+| Homebrew, winget, PowerShell, Let's Encrypt | (unchanged) | |
+| US / California / San Francisco / My Company Inc. | (unchanged for now) | openssl.cnf sample; to be decided in Phase 4 |

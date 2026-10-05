@@ -1,0 +1,203 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"windowMinWidth": 640,
+	"windowMinHeight": 340,
+	"windowMaxWidth": 640,
+	"windowMaxHeight": 340,
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelected",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": ":xliff:Check_Title",
+	"destination": "detailScreen",
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"headerBar": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 646,
+					"height": 68,
+					"fill": "#6495ed",
+					"stroke": "transparent",
+					"strokeWidth": 0,
+					"borderStyle": "none"
+				},
+				"headerAccentStripe": {
+					"type": "rectangle",
+					"top": 64,
+					"left": 0,
+					"width": 640,
+					"height": 4,
+					"fill": "#60a5fa",
+					"stroke": "transparent",
+					"strokeWidth": 0,
+					"borderStyle": "none"
+				},
+				"headerTitle": {
+					"type": "text",
+					"top": 20,
+					"left": 18,
+					"width": 380,
+					"height": 24,
+					"text": ":xliff:Check_Title",
+					"fontSize": 17,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"headerSub": {
+					"type": "text",
+					"top": 88,
+					"left": 18,
+					"width": 420,
+					"height": 16,
+					"text": ":xliff:Check_Subtitle",
+					"fontSize": 11,
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"getVersion": {
+					"type": "button",
+					"text": ":xliff:Check_CheckOpenSSL",
+					"top": 124,
+					"left": 205,
+					"width": 240,
+					"height": 38,
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"fill": "#1a56db",
+					"stroke": "#1a56db",
+					"fontColor": "#ffffff",
+					"cornerRadius": 8,
+					"borderStyle": "none",
+					"strokeWidth": 0,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/getVersion.4dm"
+				},
+				"labelVersion": {
+					"type": "text",
+					"top": 194,
+					"left": 29,
+					"width": 130,
+					"height": 14,
+					"text": ":xliff:Check_Version",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"Input2": {
+					"type": "input",
+					"left": 165,
+					"top": 190,
+					"width": 444,
+					"height": 28,
+					"dataSource": "Form:C1466.version",
+					"enterable": false,
+					"fontSize": 11,
+					"fontFamily": "Courier New",
+					"fill": "#eff6ff",
+					"stroke": "#191970",
+					"strokeWidth": 1,
+					"cornerRadius": 5,
+					"borderStyle": "solid",
+					"fontColor": "#1d4ed8",
+					"focusable": false
+				},
+				"labelPath": {
+					"type": "text",
+					"top": 244,
+					"left": 29,
+					"width": 130,
+					"height": 14,
+					"text": ":xliff:Check_Path",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"fontFamily": "system",
+					"fill": "transparent"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 165,
+					"top": 240,
+					"width": 444,
+					"height": 28,
+					"dataSource": "Form:C1466.openSSLPath",
+					"enterable": false,
+					"fontSize": 11,
+					"fontFamily": "Courier New",
+					"fill": "#eff6ff",
+					"stroke": "#191970",
+					"strokeWidth": 1,
+					"cornerRadius": 5,
+					"borderStyle": "solid",
+					"fontColor": "#1d4ed8",
+					"focusable": false
+				},
+				"Check Box": {
+					"type": "checkbox",
+					"text": ":xliff:Check_OpenSSLFound",
+					"top": 290,
+					"left": 165,
+					"width": 220,
+					"height": 24,
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.isOpenSSL",
+					"dataSourceTypeHint": "boolean"
+				},
+				"footerBar": {
+					"type": "rectangle",
+					"top": 381,
+					"left": 6,
+					"width": 640,
+					"height": 32,
+					"fill": "#dbeafe",
+					"stroke": "#bfdbfe",
+					"strokeWidth": 1,
+					"borderStyle": "solid"
+				}
+			}
+		}
+	],
+	"geometryStamp": 34,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"menuBar": "Barre #1"
+}

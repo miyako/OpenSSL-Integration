@@ -1,0 +1,7 @@
+.codeBox {
+    font-family: "Consolas", "Monaco", monospace;
+    font-size: 12px;
+    fill: #0c0c0c;
+    stroke: #33ff33;
+    borderStyle: solid;
+}
