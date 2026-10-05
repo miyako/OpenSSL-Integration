@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="3">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="4">
 	<com.4d>
 		<general startup_environnement="1"/>
 		<interface>
 			<developper display_toolbar="false"/>
+			<user splash_screen="false"/>
 		</interface>
 	</com.4d>
 </preferences>
