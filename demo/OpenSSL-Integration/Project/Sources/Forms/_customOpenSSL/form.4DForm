@@ -172,7 +172,7 @@
 					"text": ":xliff:Custom_FoundAtPath",
 					"top": 196,
 					"left": 36,
-					"width": 182,
+					"width": 202,
 					"height": 36,
 					"fontSize": 12,
 					"fontWeight": "bold",
@@ -242,7 +242,7 @@
 			}
 		}
 	],
-	"geometryStamp": 44,
+	"geometryStamp": 47,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

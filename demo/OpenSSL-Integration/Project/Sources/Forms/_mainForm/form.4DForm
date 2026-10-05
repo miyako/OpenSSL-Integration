@@ -88,7 +88,7 @@
 					"text": ":xliff:Main_OpenSSLInstalled",
 					"top": 702,
 					"left": 24,
-					"width": 144,
+					"width": 244,
 					"height": 24,
 					"events": [
 						"onClick"
@@ -209,7 +209,7 @@
 					"top": 550,
 					"left": 54,
 					"width": 322,
-					"height": 14,
+					"height": 24,
 					"text": ":xliff:Main_InfoKeySaved",
 					"fontSize": 12,
 					"fontStyle": "normal",
@@ -556,7 +556,7 @@
 					"top": 645,
 					"left": 116,
 					"width": 393,
-					"height": 14,
+					"height": 28,
 					"text": ":xliff:Main_CSRSubmit",
 					"fontSize": 14,
 					"fontStyle": "normal",
@@ -569,7 +569,7 @@
 					"top": 622,
 					"left": 116,
 					"width": 471,
-					"height": 14,
+					"height": 28,
 					"text": ":xliff:Main_KeySavedAsItem",
 					"fontSize": 14,
 					"fontStyle": "normal",
@@ -1842,7 +1842,7 @@
 			}
 		}
 	],
-	"geometryStamp": 729,
+	"geometryStamp": 738,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

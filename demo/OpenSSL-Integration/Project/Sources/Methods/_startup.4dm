@@ -5,7 +5,7 @@ If (Count parameters:C259=0)
 Else 
 	
 	// On Startup Method
-	var $isWindows; $isMacOS; $isSilicon : Boolean
+	var $isWindows; $isMacOS; $isSilicon; $isArm : Boolean
 	var $systemInfo : Object
 	var $windowRef : Integer
 	var $openSSLPath : Text
@@ -22,6 +22,10 @@ Else
 	
 	If ($isMacOS)
 		$isSilicon:=Not:C34($systemInfo.macRosetta)
+	Else 
+		var $processor : Text
+		$processor:=System info:C1571.processor
+		$isArm:=["apple"; "snapdragon"; "qualcomm"; "oryon"; "sq"; "ampere"; "altra"; "neoverse"; "graviton"; "cobalt"; "cortex"; "arm"].some(Formula:C1597($2=("@"+$1.value+"@")); $processor)
 	End if 
 	
 	// Determine OS
@@ -38,7 +42,11 @@ Else
 	
 	Case of 
 		: ($isWindows)
-			$openSSLPath:="C:\\Program Files\\OpenSSL-Win64\\bin\\openssl.exe"
+			If ($isArm)
+				$openSSLPath:="C:\\Program Files\\OpenSSL-Win64-ARM\\bin\\openssl.exe"
+			Else 
+				$openSSLPath:="C:\\Program Files\\OpenSSL-Win64\\bin\\openssl.exe"
+			End if 
 			$openSSLFile:=File:C1566($openSSLPath; fk platform path:K87:2)
 			
 		: ($isMacOS & $isSilicon)
@@ -61,6 +69,10 @@ Else
 		Use (Storage:C1525.config)
 			// Store OS
 			Storage:C1525.config.os:=$os
+			Storage:C1525.config.arch:="x86_64"
+			If ($isSilicon) || ($isArm)
+				Storage:C1525.config.arch:="arm64"
+			End if 
 			
 			// Store OpenSSL information
 			Storage:C1525.config.openSSLFound:=$openSSLFound

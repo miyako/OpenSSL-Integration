@@ -99,7 +99,7 @@
 					"type": "text",
 					"top": 126,
 					"left": 36,
-					"width": 80,
+					"width": 100,
 					"height": 13,
 					"text": ":xliff:Startup_Platform",
 					"fontSize": 11,
@@ -316,7 +316,7 @@
 					"top": 336,
 					"left": 420,
 					"width": 200,
-					"height": 13,
+					"height": 15,
 					"text": ":xliff:Startup_ProceedNote",
 					"fontSize": 12,
 					"fontFamily": "system",
@@ -385,7 +385,7 @@
 			}
 		}
 	],
-	"geometryStamp": 83,
+	"geometryStamp": 88,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

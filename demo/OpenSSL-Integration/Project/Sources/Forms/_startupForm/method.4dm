@@ -16,6 +16,7 @@ Case of
 		Form:C1466.platform:=$os
 		Form:C1466.isOpenSSL:=$isOpenSSL
 		
+		OBJECT SET TITLE:C194(*; "archValue"; Storage:C1525.config.arch)
 		OBJECT SET VISIBLE:C603(bgoToApp; $isOpenSSL)
 		
 End case 
