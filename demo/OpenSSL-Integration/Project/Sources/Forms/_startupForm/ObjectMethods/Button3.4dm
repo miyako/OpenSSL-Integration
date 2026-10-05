@@ -1,11 +1,13 @@
 Case of 
 	: (Form event code:C388=On Clicked:K2:4)
 		
+		var $binPath; $os : Text
+		var $isOpenSSL : Boolean
+		
 		If (Storage:C1525.config#Null:C1517)
 			$binPath:=Storage:C1525.config.openSSLPath
 			$os:=Storage:C1525.config.os
 			$isOpenSSL:=Storage:C1525.config.openSSLFound
-			
 		Else 
 			$binPath:=""
 		End if 

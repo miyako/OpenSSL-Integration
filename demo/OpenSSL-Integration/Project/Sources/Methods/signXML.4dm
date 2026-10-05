@@ -32,7 +32,7 @@ $worker:=Execute_OpenSSL($cmd)
 $sigFile:=File:C1566($pathXMLOUT)
 
 
-If ($sigFile#Null:C1517 & $worker.terminated)
+If ($sigFile#Null:C1517) && ($worker.terminated)
 	ALERT:C41("Success! Signed file created in Resources:\n"+$sigFile.name)
 	Form:C1466.signedXML:=$sigFile.getText()
 Else 
